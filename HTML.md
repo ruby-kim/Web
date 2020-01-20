@@ -67,7 +67,6 @@ This is a <sub>SubScript</sub>
 ## 4. Style
 format: ```<tagname style="attributename:attributevalue;">Contents</tagname>```
 ```
-<h1>4. Style</h1>
 <h3>Before: This is a content before applying style</h3>
 <br>
 <h3 style="font-size: 150%;">This is a style which is related in font size</h3>
