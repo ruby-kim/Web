@@ -107,7 +107,28 @@ format: ```<a href="moving_scheduled_path">```
 <a href="https://www.google.com">Move Google site</a><br>
 <a href="https://www.google.com" target="_self">Move Google site(Direct)</a><br>
 <a href="https://www.google.com" target="_blank">Move Google site(New page)</a><br><br>
-<a href="C:\Users\kkyy0\Desktop\Web\01.html\step01_practice\01_text_style.html" target="_blank"> Absolute Path</a><br>
+<a href="C:\Users\kkyy0\Desktop\Web\page\01_text_style.html" target="_blank"> Absolute Path</a><br>
 <a href="./01_text_style.html" target="_blank">Relative Path</a>
 ```
 ![image](https://user-images.githubusercontent.com/38516906/72702549-6c84d800-3b96-11ea-8ce6-ab2cacb06329.png)
+
+<br>
+
+## 7. Layout & Meaningful division
+physical division & logical(meaningful) division
+1. Block
+```
+<!-- All lines -->
+<p style="background-color: aquamarine;">p is a block</p>
+<div style="background-color: cadetblue;">Also, div is a  block</div>
+```
+![image](https://user-images.githubusercontent.com/38516906/72703608-5c222c80-3b99-11ea-8335-6ffda553f876.png)
+
+2. Inline
+```
+<!-- Until contents-->
+<strong style="background-color: coral;">strong is a Inline</strong><br>
+<a style="background-color: cornsilk;">Also, a is a Inline</a><br>
+<span style="background-color: darkgrey;">Lastly, span is a Inline</span>
+```
+![image](https://user-images.githubusercontent.com/38516906/72703637-70fec000-3b99-11ea-9575-8624f3449cb3.png)
