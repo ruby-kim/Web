@@ -21,7 +21,6 @@ HyperText Markup Language
 <br>
 
 ## Text Style
-1. HTML Text
 * Heading(1~6)
 ```
 <h1>This is a Title 1(h1)</h1>
@@ -33,7 +32,7 @@ HyperText Markup Language
 ```
 ![image](https://user-images.githubusercontent.com/38516906/72694656-16556c00-3b79-11ea-8bac-3a6398a6cf2c.png)
 
-2. Paragraph
+* Paragraph
 ```
 <p> This is a Paragraph 1</p>
 <p> This is a Paragraph 2</p> 
@@ -42,7 +41,7 @@ HyperText Markup Language
 ```
 ![image](https://user-images.githubusercontent.com/38516906/72695205-1191b780-3b7b-11ea-81d0-b2c526ece84f.png)
 
-3. Formatting
+* Formatting
 ```
 <b>Bold</b> font formatting<br> <!-- Just Bold -->
 <strong>Bold</strong> font formatting <!-- Emphasis Bold-->
