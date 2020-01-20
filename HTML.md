@@ -133,6 +133,7 @@ format: ```<a href="moving_scheduled_path">```
 ![image](https://user-images.githubusercontent.com/38516906/72703637-70fec000-3b99-11ea-9575-8624f3449cb3.png)
 
 <br>
+
 ## 8. Semantic
 ```
 <div style="text-align: center; width: 350px";>
@@ -147,5 +148,4 @@ format: ```<a href="moving_scheduled_path">```
     <footer style="background-color: greenyellow; clear: left;">This is a footer</footer>
 </div>
 ```
-
 ![image](https://user-images.githubusercontent.com/38516906/72704643-bc669d80-3b9c-11ea-9574-269e3217036f.png)
