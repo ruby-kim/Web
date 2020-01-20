@@ -8,7 +8,7 @@ HyperText Markup Language
 
 <br>
 
-## Term
+## 0. Term
 * HTML Element: ```<tagname>Contents</tagname>```
 
 * Empty Element: ```<meta charset="UTF-8">  // meta```<br>
@@ -20,7 +20,7 @@ HyperText Markup Language
 
 <br>
 
-## Heading(1~6)
+## 1. Heading(1~6)
 ```
 <h1>This is a Title 1(h1)</h1>
 <h2>This is a Title 2(h2)</h2>
@@ -33,7 +33,7 @@ HyperText Markup Language
 
 <br>
 
-## Paragraph
+## 2. Paragraph
 ```
 <p> This is a Paragraph 1</p>
 <p> This is a Paragraph 2</p> 
@@ -44,7 +44,7 @@ HyperText Markup Language
 
 <br>
 
-## Formatting
+## 3. Formatting
 ```
 <b>Bold</b> font formatting<br> <!-- Just Bold -->
 <strong>Bold</strong> font formatting <!-- Emphasis Bold-->
@@ -64,8 +64,16 @@ This is a <sub>SubScript</sub>
 
 <br>
 
-## Style
-<tagname style="attributename:attributevalue;">Contents</tagname>
+## 4. Style
+format: ```<tagname style="attributename:attributevalue;">Contents</tagname>```
 ```
-
+<h1>4. Style</h1>
+<h3>Before: This is a content before applying style</h3>
+<br>
+<h3 style="font-size: 150%;">This is a style which is related in font size</h3>
+<h3 style="color:cornflowerblue;">This is a style which is related in color</h3>
+<h3 style="text-align: center;">This is a style which is related in font align</h3>
+<br>
+<h3 style="font-size: 150%; color: cornflowerblue; text-align: center;">After: This is a content after applying all of styles</h3>
 ```
+![image](https://user-images.githubusercontent.com/38516906/72700034-ed8ba180-3b8d-11ea-93a5-2c80978379db.png)
