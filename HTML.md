@@ -29,7 +29,7 @@ The Web uses **HTML5** as standard.
 <h5>This is a Head 5(h5)</h5>
 <h6>This is a Head 6(h6)</h6>
 ```
-![image](https://user-images.githubusercontent.com/38516906/72694656-16556c00-3b79-11ea-8bac-3a6398a6cf2c.png)
+![image](https://user-images.githubusercontent.com/38516906/72703914-537e2600-3b9a-11ea-9f83-a5b44a94589c.png)
 
 <br>
 
@@ -115,7 +115,6 @@ format: ```<a href="moving_scheduled_path">```
 <br>
 
 ## 7. Layout
-### Physical division
 1. Block
 ```
 <!-- All lines -->
@@ -133,4 +132,19 @@ format: ```<a href="moving_scheduled_path">```
 ```
 ![image](https://user-images.githubusercontent.com/38516906/72703637-70fec000-3b99-11ea-9575-8624f3449cb3.png)
 
- ### Logical(meaningful) division
+<br>
+## 8. Semantic
+```
+<div style="text-align: center; width: 350px";>
+    <header style="background-color: darkolivegreen;">This is a header</header>
+    <nav style="background-color: darksalmon;">This is a navigation</nav>
+    <section style="background-color: darkseagreen; float: left;">
+        <article>This is an article inside section 1</article>
+        <article>This is an article inside section 2</article>
+        <article>This is an article inside section 3</article>
+        </section>
+    <aside style="background-color: deepskyblue;">This is a aside</aside>
+    <footer style="background-color: greenyellow; clear: left;">This is a footer</footer>
+</div>
+```
+![image](https://user-images.githubusercontent.com/38516906/72704643-bc669d80-3b9c-11ea-9574-269e3217036f.png)
