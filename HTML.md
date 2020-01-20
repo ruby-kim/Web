@@ -1,8 +1,8 @@
 # HTML
 HyperText Markup Language
-* HyperText: **Link**를 통해 웹 사이를 이동하는 것
-* Markup: 어떠한 필요한 문서 내에서 정해진 규정대로 사용하는 것. </>
-* Language: 언어
+* HyperText: Moving from web to via **Link**
+* Markup: To use as prescribed in a document
+* Language
 
 웹에서는 표준으로 **HTML5**를 사용한다.
 
@@ -22,12 +22,12 @@ HyperText Markup Language
 
 ## 1. Heading(1~6)
 ```
-<h1>This is a Title 1(h1)</h1>
-<h2>This is a Title 2(h2)</h2>
-<h3>This is a Title 3(h3)</h3>
-<h4>This is a Title 4(h4)</h4>
-<h5>This is a Title 5(h5)</h5>
-<h6>This is a Title 6(h6)</h6>
+<h1>This is a Head 1(h1)</h1>
+<h2>This is a Head 2(h2)</h2>
+<h3>This is a Head 3(h3)</h3>
+<h4>This is a Head 4(h4)</h4>
+<h5>This is a Head 5(h5)</h5>
+<h6>This is a Head 6(h6)</h6>
 ```
 ![image](https://user-images.githubusercontent.com/38516906/72694656-16556c00-3b79-11ea-8bac-3a6398a6cf2c.png)
 
@@ -77,3 +77,37 @@ format: ```<tagname style="attributename:attributevalue;">Contents</tagname>```
 <h3 style="font-size: 150%; color: cornflowerblue; text-align: center;">After: This is a content after applying all of styles</h3>
 ```
 ![image](https://user-images.githubusercontent.com/38516906/72700034-ed8ba180-3b8d-11ea-93a5-2c80978379db.png)
+
+<br>
+
+## 5. Image
+format: ```<img src="source URI" alt="">```
+```
+<img src="http://dn.joongdo.co.kr/mnt/images/file/2018y/06m/07d/2018060701000651500027651.jpg" alt="Puss in Boots"><br>
+<img src="http://dn.joongdo.co.kr/mnt/images/file/2018y/06m/07d/2018060701000651500027651.jpg" alt="Puss in Boots" width="220px" height="180px"><br>
+<img src="http://dn.joongdo.co.kr/mnt/images/file/2018y/06m/07d/2018060701000651500027651.jpg" alt="Puss in Boots" style="width: 220px; height: 180px;">
+```
+![image](https://user-images.githubusercontent.com/38516906/72700811-5ecc5400-3b90-11ea-92e4-5a5fe0357820.png)
+
+<br>
+
+## 6. URI(Uniform Resource Identifier) & Link
+1. URI
+  * URL: Uniform Resource **Locator**(Absolute URL / Relative URL)<br>
+    ```<protocol://ip_address:port_number/path/file_name?query>```
+    * protocol: Convention on web server request. Regulary use **http** or **https**
+    * ip_address: Unique number assigned to the network connection device
+    * port_number: Web server access gate. Regulary use http as 80 and https as 443
+    * path: Web server resource path
+    * query: Web server request parameter(key1=value1)
+  * URN: Uniform Resource **Name**
+2. Link<br>
+format: ```<a href="moving_scheduled_path">```
+```
+<a href="https://www.google.com">Move Google site</a><br>
+<a href="https://www.google.com" target="_self">Move Google site(Direct)</a><br>
+<a href="https://www.google.com" target="_blank">Move Google site(New page)</a><br><br>
+<a href="C:\Users\kkyy0\Desktop\Web\01.html\step01_practice\01_text_style.html" target="_blank"> Absolute Path</a><br>
+<a href="./01_text_style.html" target="_blank">Relative Path</a>
+```
+![image](https://user-images.githubusercontent.com/38516906/72702549-6c84d800-3b96-11ea-8ce6-ab2cacb06329.png)
