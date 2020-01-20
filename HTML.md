@@ -4,7 +4,7 @@ HyperText Markup Language
 * Markup: To use as prescribed in a document
 * Language
 
-웹에서는 표준으로 **HTML5**를 사용한다.
+The Web uses **HTML5** as standard.
 
 <br>
 
@@ -114,8 +114,8 @@ format: ```<a href="moving_scheduled_path">```
 
 <br>
 
-## 7. Layout & Meaningful division
-physical division & logical(meaningful) division
+## 7. Layout
+### Physical division
 1. Block
 ```
 <!-- All lines -->
@@ -132,3 +132,5 @@ physical division & logical(meaningful) division
 <span style="background-color: darkgrey;">Lastly, span is a Inline</span>
 ```
 ![image](https://user-images.githubusercontent.com/38516906/72703637-70fec000-3b99-11ea-9575-8624f3449cb3.png)
+
+ ### Logical(meaningful) division
