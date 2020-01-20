@@ -147,4 +147,5 @@ format: ```<a href="moving_scheduled_path">```
     <footer style="background-color: greenyellow; clear: left;">This is a footer</footer>
 </div>
 ```
+
 ![image](https://user-images.githubusercontent.com/38516906/72704643-bc669d80-3b9c-11ea-9574-269e3217036f.png)
