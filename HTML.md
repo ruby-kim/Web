@@ -245,3 +245,82 @@ format: ```<a href="moving_scheduled_path">```
     </table>
   ```
   ![image](https://user-images.githubusercontent.com/38516906/72769542-6b0eea80-3c3e-11ea-9aa2-d38caec4bc67.png)
+
+<br>
+
+## 11. Form & Input
+1. Input
+  * text input
+  ```
+  <h2>1-1. input: text</h2>
+    <form action="">
+        Input Text: <br>
+        <input type="text">
+    </form>
+  ```
+  ![image](https://user-images.githubusercontent.com/38516906/72770394-191b9400-3c41-11ea-8dfd-f17d910e5da4.png)
+  
+  * password input
+  ```
+  <h2>1-2. input: password</h2>
+    <form action="">
+        ID: <br><input type="text"> <br>
+        PW: <br><input type="password">
+    </form>
+  ```
+  ![image](https://user-images.githubusercontent.com/38516906/72770410-23d62900-3c41-11ea-8d97-98e6b10f220e.png)
+
+  * radio input
+  ```
+  <h2>1-3. input: radio</h2>
+    <form action="">
+        <!-- name->grouping. if not, all of radio are selected-->
+        <input type="radio" name="radio" value="radio_value"> Radio button 1<br>
+        <input type="radio" name="radio"> Radio button 2<br>
+        <input type="radio"> Radio button 3<br>
+    </form>
+  ```
+  ![image](https://user-images.githubusercontent.com/38516906/72770727-0eadca00-3c42-11ea-9f7a-bdae14989794.png)
+
+  * check box input
+  ```
+  <h2>1-4. input: check box</h2>
+    <form action="">
+        <input type="checkbox" name="" checked> checkbox 1<br>
+        <input type="checkbox" name=""> checkbox 2<br>
+    </form>
+  ```
+  ![image](https://user-images.githubusercontent.com/38516906/72771118-35203500-3c43-11ea-806b-acdf413b22d4.png)
+
+2. select
+```
+<h2>1-5. select</h2>
+  <select name="" id="">
+      <option value="">option 1</option>
+      <option value="" selected>option 2</option>
+      <option value="">option 3</option>       
+      <option value="">option 4</option>
+  </select>
+```
+![image](https://user-images.githubusercontent.com/38516906/72771224-89c3b000-3c43-11ea-918c-ba512037197e.png)
+
+3. button
+```
+<h2> 1-6. button</h2>
+    <button>
+        Click this button
+    </button>
+```
+![image](https://user-images.githubusercontent.com/38516906/72771433-3aca4a80-3c44-11ea-8721-0592a8220537.png)
+
+  * submit input
+  ```
+  <h2>1-7. input: submit</h2>
+    <form action="">
+        Input text:<br>
+        <input type="text" placeholder="No wrong answer">
+        <input type="submit">
+    </form>
+  ```
+  ![image](https://user-images.githubusercontent.com/38516906/72771407-271ee400-3c44-11ea-9c45-081cb63aaccd.png)
+
