@@ -189,3 +189,59 @@ format: ```<a href="moving_scheduled_path">```
         </ol>
   ```
   ![image](https://user-images.githubusercontent.com/38516906/72767571-c25d8c80-3c37-11ea-9b03-f2d7d180c03c.png)
+
+<br>
+
+## 10. Table
+1. The basic of Table
+```
+<h2>1-1. The basic of Table</h2>
+    <table border="1"> <!-- border function -->
+        <tr> <!-- table row -->
+            <th> Title 1</th> <!-- table head -->
+            <th> Title 2</th> 
+            <th> Title 3</th> 
+        </tr>
+        <tr>
+            <td>Cell 1-1</td> <!-- table data -->
+            <td>Cell 1-2</td>
+            <td>Cell 1-3</td>
+        </tr>
+    </table>
+    <br>
+```
+![image](https://user-images.githubusercontent.com/38516906/72769476-313de400-3c3e-11ea-88ed-40f0e368e983.png)
+
+2. The merge of Table
+  * colspan
+  ```
+  <h3>1-2-1. colspan</h3>
+    <table border="1" width="200" height="200">
+        <tr>
+            <td colspan="200">1</td>
+            <!-- <td>2</td> -->
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <br>
+  ```
+  ![image](https://user-images.githubusercontent.com/38516906/72769525-56caed80-3c3e-11ea-88a7-ca22b4918d38.png)
+
+  * rowspan
+  ```
+  <h3>1-2-2. rowspan</h3>
+    <table border="1" width="200", height="200">
+        <tr>
+            <td rowspan="200">1</td>
+            <td width="100", height="100">2</td>
+        </tr>
+        <tr>
+            <!-- <td>3</td> -->
+            <td width="100", height="100">4</td>
+        </tr>
+    </table>
+  ```
+  ![image](https://user-images.githubusercontent.com/38516906/72769542-6b0eea80-3c3e-11ea-9aa2-d38caec4bc67.png)
