@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>나만의 SNS 만들기</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <body>
+        <!-- To do 1 : div(11번 라인) width: 540px로 설정 -->
+        <div style="width: 540px;">
+            <!-- 헤더(header) -->
+            <header>
+                <!-- 내비게이션(nav) -->
+                <nav> 
+                    <!-- 중앙 로고 -->
+                    <div>
+                        <!-- To do 2 
+                                2-1 : a(21번 라인) 링크 목적지 insta_main(blank).html 설정
+                                2-2 : h1(22번 라인) 글꼴 설정 : 크기는 42px로 설정-->
+                        <a href="insta_main(blank).html">
+                            <h1 style="font-size: 42px;">enstagram</h1>
+                        </a>
+                    </div>
+                    <!-- 우측 상단 아이콘(3개) -->
+                    <!-- To do 3 : div(27번 라인) text-align 속성 사용하여 오른쪽으로 설정 -->
+                    <div style="text-align: right;">
+                        <!-- To do 4 : a, img(37번 ~ 45번 라인) 설정
+                                    4-1. 이미지 파일(img 폴더 내)를 활용한 아이콘 설정
+                                    4-2. alt 값은 이미지 파일명과 동일하게 설정
+                                    4-3. width, height 모두 40px로 설정
+                                    4-4. 클릭 시 지정 페이지로 이동 할 수 있게 링크 설정 
+                                            이미지 파일명   /   클릭 시 이동할 경로(페이지)
+                                            - user          /   insta_main(blank).html로 이동
+                                            - clipboard     /   insta_quiz(blank).html로 이동
+                                            - webcam        /   insta_ml(blank).html로 이동 -->
+                        <a href="insta_main(blank).html">
+                            <img src="img/user.png" alt="insta_main(blank)" width="40px" height="40px">
+                        </a>
+                        <a href="insta_quiz(blank).html">
+                            <img src="img/clipboard.png" alt="insta_quiz(blank)" width="40px" height="40px">
+                        </a>
+                        <a href="insta_ml(blank).html">
+                            <img src="img/webcam.png" alt="insta_ml(blank)" width="40px" height="40px">
+                        </a>
+                    </div>
+                </nav>                
+            </header>
+            <!-- 메인 내용(section) -->
+            <section>
+                <div>
+                    <!-- 콘텐츠 영역 -->
+                    <div>
+                        <!-- 게시글 (하단 영역 복사해서 입력) -->
+                        <div>
+                            <!-- 프로필 영역 -->
+                            <div>
+                                <!-- 작성자 프로필 사진 -->
+                                <!-- To do 5 :  img(63번 라인) 설정
+                                            5-1. 이미지 파일(img 폴더 내) : 이미지 파일명 - profile
+                                            5-2. alt 값은 이미지 파일명과 동일하게 설정
+                                            5-3. width, height 모두 40px로 설정 -->
+                                <img src="img/profile.jpg" alt="profile" width="40px" height="40px">
+                                <!-- 작성자 아이디 -->
+                                <div>
+                                    <div>kimminji</div>
+                                </div>
+                            </div>
+
+                            <!-- 머신러닝 영역(article) -->
+                            <article>
+                                <!-- 제목 -->
+                                <div>
+                                    <h3><b>나만의 머신러닝</b> &nbsp;</h3>
+                                </div>
+                                <!-- 내용 -->
+                                <div>
+                                    <div>
+                                        <!-- To do 6 : 나만의 머신러닝 내용(83번 ~ 85번 라인, 90번 ~ 92번) 설정
+                                                    6-1. 단락 나누기
+                                                    6-2. 단락 별 굵기, 줄나누기 내용 구성
+                                                    6-3. 링크(83번 라인) 주소 : teachablemachine.withgoogle.com -->
+                                                <p>이 프로그램은 <a href="teachablemachine.withgoogle.com">Teachable Machine</a>으로<br>
+                                                    1000원과 5000원의 사진을 학습시킨 결과물입니다.
+                                                </p>
+                                                <p>학습된 데이터를 통해 <strong>딥러닝 모델</strong>이 만들어지며,<br>
+                                                    이 모델은 카메라 이미지를 바탕으로 1000원과 5000원 중<br>
+                                                    무엇과 더 유사한지 확률을 계산합니다.
+                                                </p>
+                                                <p>각 항목 옆에 표시되는 % <strong>수치</strong>는<br>
+                                                    머신이 판별한 <strong>상대적 유사도</strong>로,<br>
+                                                    한 쪽이 <strong>95% 이상 유사도</strong>를 보였을 때<br>
+                                                    해당 항목에 대한 자세한 설명이 나옵니다.
+                                                </p>
+                                    </div> 
+                                    <div>
+                                        <h2><b>Question</b></h2>
+                                        <p>
+                                            1000원으론 핫바를 먹을 수 있고 5000원으론 덮밥을 먹을 수 있지.<br>
+                                            우리는 그 차이를 알지만 과연 컴퓨터도 그 차이를 알까?<br>
+                                            그래서 내가 컴퓨터에게 가르쳐줬어! 1000원과 5000원을 보여줘봐!
+                                        </p>
+                                    </div> 
+                                    <div>
+                                        <!-- To do 7 : 머신러닝 예제 이미지(102번 라인) 설정
+                                                    7-1. 이미지 파일(img 폴더 내)를 활용한 아이콘 설정
+                                                    7-2. alt 값은 이미지 파일명과 동일하게 설정
+                                                    7-3. width, height 추가 설정 없음
+                                                            이미지 파일명  
+                                                            - machine-learning -->
+                                        <h2><b>Machine Learning <img src="img/machine-learning.png" alt="machine-learning"></b></h2>
+                                        <!-- 머신러닝 예제-->
+                                        <!-- To do 8 : 머신러닝 예제 이미지(111번 ~ 112번 라인) 설정
+                                                    8-1. 이미지 파일(img 폴더 내)를 활용한 아이콘 설정
+                                                    8-2. alt 값은 이미지 파일명과 동일하게 설정
+                                                    8-3. width, height 모두 240px로 설정
+                                                            이미지 파일명  
+                                                            - paper
+                                                            - plastic -->
+                                        <img src="img/paper.jpg" alt="paper" width="240px" height="240px">
+                                        <img src="img/plastic.jpg" alt="plastic" width="240px" height="240px">
+                                    </div> 
+                                </div>
+                            </article>    
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- copyright 및 이메일 기입 영역 -->
+            <footer>
+                <div>
+                    <b>&copy;copyright kimminji</b><br>
+                    encore@encore.com
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
+

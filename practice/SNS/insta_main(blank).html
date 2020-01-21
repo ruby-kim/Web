@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>나만의 SNS 만들기</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <div>
+        <!-- 헤더(header) -->
+        <header>
+            <!-- 내비게이션(nav) -->
+            <nav>
+                <!-- 중앙 로고 -->
+                <div>
+                    <div>
+                        <a href="insta_main(blank).html">
+                            <h1 style="font-size:42px">enstagram</h1>
+                        </a>
+                    </div>    
+                </div>
+                <!-- 우측 상단 아이콘(3개) -->
+                <div style="width: 60%; text-align: right;">
+                    <div>
+                        <a href="insta_main(blank).html">
+                            <img src="img/user.png" alt="user" style="width: 40px; height: 40px;">
+                        </a>
+                        <a href="insta_quiz(blank).html">
+                            <img src="img/clipboard.png" alt="clipboard" style="width: 40px; height: 40px;">
+                        </a>
+                        <a href="insta_ml(blank).html">
+                            <img src="img/webcam.png" alt="webcam" style="width: 40px; height: 40px;">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- 메인 내용 -->
+        <!-- To do 1 : div(46번 라인)
+                    1-1. width는 40%로 설정
+                    1-2. 블록 위치(float)는 왼쪽으로 설정 -->
+        <!-- 좌측 영역(section) -->
+        <div style="width: 40%; float: left;">
+            <!-- 게시글 1 -->
+            <div>
+                <!-- 프로필 -->
+                <div>
+                    <img src="img/profile.jpg" alt="profile" style="width: 40px; height: 40px;">
+                    <!-- 작성자 아이디 -->
+                    <span>kimminji</span>
+                    <hr>
+                </div>
+                <!-- To do 2 : 게시글 1 이미지(62번 라인)
+                            2-1. 이미지 파일(img 폴더 내) : 이미지 파일명 - cat
+                            2-2. alt 값은 이미지 파일명과 동일하게 설정
+                            2-3. width는 100%로 설정(생각해보기 : 100%인 이유?) -->
+                <!-- 게시글 1 이미지 -->
+                <div>
+                    <img src="img/cat.jpg" alt="cat" style="width: 100%;">
+                </div>
+                <!-- 게시글 1 글 -->
+                <div>
+                    <!-- To do 3 : input(73번 ~ 74번 라인)
+                                3-1. 타입은 버튼
+                                3-2. 값(value) 설정
+                                            값(value)
+                                        - 73번 라인 : 좋아요
+                                        - 74번 라인 : 댓글   -->
+                    <!-- 버튼 -->
+                    <input type="button" onclick="" value="좋아요">
+                    <input type="button" onclick="" value="댓글">
+                    <!-- 좋아요 갯수 -->
+                    <p>좋아요 341개</p>
+                    <!-- 본문 -->
+                    <span>kimminji</span> 2020년엔 서로 더 많이 사랑하자💕
+                    <a href="https://www.instagram.com/explore/tags/%ED%95%B4%ED%94%BC%EB%89%B4%EC%9D%B4%EC%96%B4%F0%9F%8E%89/">#해피뉴이어🎉</a>
+                    <!-- 작성 시간 -->
+                    <p>17시간 전</p>
+                    <!-- 댓글 -->
+                    <div>
+                        <div>
+                            <div>
+                                <!-- To do 4  : input(99번 ~ 100번 라인) / button(101번 라인)
+                                            4-1 : 99번 라인
+                                                4-1-1. 타입은 텍스트
+                                                4-1-2. placeholder은 '별명(5자 이하)'로 설정
+                                                4-1-3. minlength는 1, maxlength는 5로 설정(생각해보기 : minlength, maxlength 설정값의 의미?)
+                                            4-2. 100번 라인
+                                                4-2-1. 타입은 텍스트
+                                                4-2-2. placeholder은 '댓글 달기 ...'로 설정 
+                                            4-3. : 101번 라인
+                                                4-3-1. 버튼
+                                                4-3-2. 컨텐츠(내용)은 게시로 설정 -->
+                                <span onclick="">&times;</span>
+                                <div>
+                                    <input type="text" minlength="1" maxlength="5" placeholder="별명 (5자 이하)">
+                                    <input type="text" placeholder="댓글 달기 ..."><br>
+                                    <button>게시</button>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr><br>
+            <!-- 게시글 2 -->
+            <div>
+                <!-- 프로필 영역 -->
+                <div>
+                    <img src="img/profile.jpg" alt="profile" style="width: 40px; height: 40px;">
+                    <!-- 작성자 아이디 -->
+                    <span>kimminji</span>
+                    <hr>
+                </div>
+                <!-- To do 5 : 게시글 2 이미지(124번 라인)
+                            5-1. 이미지 파일(img 폴더 내) : 이미지 파일명 - dog
+                            5-2. alt 값은 이미지 파일명과 동일하게 설정
+                            5-3. width는 100%로 설정(생각해보기 : 100%인 이유?) -->
+                <!-- 게시글 2 이미지 -->
+                <div>
+                    <img src="img/dog.jpg" alt="dog" style="width: 100%;">
+                </div>
+                <!-- 게시글 2 영역 -->
+                <div>
+                    <!-- To do 6 : input(133번 ~ 134번 라인)
+                                6-1. 66번 ~ 74번 라인 참고 -->
+                    <!-- 버튼 영역 -->
+                    <input type="button" onclick="" value="좋아요">
+                    <input type="button" onclick="" value="댓글"><br>
+                    <!-- 좋아요 -->
+                    <p>좋아요 1,157개</p>
+                    <!-- 본문 영역 -->
+                    <span>kimminji</span>
+                    <span>
+                        아심쿵 ♥️♥️ㅎㅎㅎㅎ 내이쁜 친그 아기 호두🐶
+                        ㅋㅋㅋㅋ 너뮤기여웍 왜케 잘크냐그 🐈 완전 사랑행😍😍
+                    </span>
+                    <a href="https://www.instagram.com/explore/tags/%EC%B9%9C%EA%B5%AC%EA%B0%9C/">#친구개</a>
+                    <!-- 시간 -->
+                    <p>4일 전</p>
+                    <!-- 댓글 -->
+                    <div>
+                        <div>
+                            <div>
+                            <!-- To do 7 : input(155번 ~ 156번 라인) / button(157번 라인)
+                                        7-1. 86번 ~ 101번 라인 참고 -->
+                                <!-- 버튼 -->
+                                <span onclick="">&times;</span>
+                                <div>
+                                    <input type="text" minlength="1" maxlength="5" placeholder="별명 (5자 이하)">
+                                    <input type="text" placeholder="댓글 달기 ..."><br>
+                                    <button>게시</button>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- To do 8 : div(176번, 178번 라인)
+                    8-1. 176번 라인
+                        8-1-1. border로 외부 윤곽 설정
+                                (색상 : 검정, 종류 : 실선, 굵기 : 1 px)
+                        8-1-2. width는 250px로 설정
+                        8-1-3. 블록 위치(float)는 왼쪽으로 설정
+                    8-2. 178번 라인
+                        8-2-1. border로 외부 윤곽 설정(8-1-1과 동일) -->
+        <!-- 우측 친구 목록 (위젯 영역) -->
+        <aside>
+            <div style="border-style: solid; border-width: 1px; width: 200px; float: left; margin-left: 50px;">
+                <div style="text-align: center;"><b>친구 목록</b></div>
+                <div style="border-style: solid; border-width: 0.5px; float: left;">
+                 <ul style="list-style: none; padding: 0%;">
+                        <li>
+                            <!-- 친구 웹 주소 -->
+                            <a href="https://unsplash.com/photos/kqxzWipnFcQ">
+                                <!-- 친구 사진 -->
+                                <img src="img/friend01.jpg" alt="friend01" style="width: 40px; height: 40px;">
+                                <!-- 친구 아이디 -->
+                                <span>navi (cat)</span>
+                            </a>
+                        </li>
+                    </ul">
+                    <hr>
+                    <ul style="list-style: none; padding: 0%;">
+                        <li>
+                             <!-- 친구 웹 주소 -->
+                             <a href="https://unsplash.com/photos/7GX5aICb5i4">
+                                <!-- 친구 사진 -->
+                                <img src="img/friend02.jpg" alt="friend02" style="width: 40px; height: 40px;">
+                                <!-- 친구 아이디 -->
+                                <span>olive (cat)</span>
+                            </a>
+                        </li>
+                    </ul">
+                    <hr>
+                    <ul style="list-style: none; padding: 0%;">
+                        <li>
+                             <!-- 친구 웹 주소 -->
+                             <a href="https://unsplash.com/photos/rW-I87aPY5Y">
+                                <!-- 친구 사진 -->
+                                <img src="img/friend03.jpg" alt="friend03" style="width: 40px; height: 40px;">
+                                <!-- 친구 아이디 -->
+                                <span>danchoo (cat)</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul style="list-style: none; padding: 0%;">
+                        <li>
+                            <!-- 친구 웹 주소 -->
+                            <a href="https://unsplash.com/photos/K4mSJ7kc0As">
+                                <!-- 친구 사진 -->
+                                <img src="img/friend04.jpg" alt="friend04" style="width: 40px; height: 40px;">
+                                <!-- 친구 아이디 -->
+                                <span>choco (dog)</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul style="list-style: none; padding: 0%;">
+                        <li>
+                            <a href="https://unsplash.com/photos/qO-PIF84Vxg">
+                                <!-- 친구 웹 주소 -->
+                                <!-- 친구 사진 -->
+                                <img src="img/friend05.jpg" alt="friend05" style="width: 40px; height: 40px;">
+                                <!-- 친구 아이디 -->
+                                <span>bori (dog)</span>
+                            </a>
+                        </li>
+                    </ul style="list-style: none;">
+                </div>
+            </div>    
+        </aside>
+
+        <!-- copyright 및 이메일 기입 영역 -->
+        <footer style="clear: left;">
+            <b>&copy;copyright kimminji</b><br>
+            encore@encore.com
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <title>04_list_table.html</title>
+</head>
+<body>
+    <!-- list -->
+    <h1>10. List</h1>
+    <h2>1-1. dt / dt / dd </h2>
+    <h3>The basic of List</h3>
+        <dl> <!-- dl: data list-->
+            <dt>Term 1</dt> <!-- dt: data -->
+                <dd>- the description about Term 1</dd> <!-- dd: data description-->
+            <dt>Term 2</dt>
+                <dd>- the description about Term 2 </dd>
+        </dl>
+        <br>
+
+    <h2>1-2. ul / ol / li</h2>
+    <h3>1-2-1. ul / li</h3> <!-- unordered list -->
+        <ul>
+            <li>unordered list 1</li>
+            <li>unordered list 2</li>
+            <li>unordered list 3</li>
+            <li>unordered list 4</li>
+        </ul>
+        <br>
+
+    <h3>1-2-2. ol / li</h3> <!-- ordered list -->
+        <ol type="A"> <!-- default: 1,2,3,.. (only write ol)-->
+            <li>ordered list 1</li>
+            <li>ordered list 2</li>
+            <li>ordered list 3</li>
+            <li>ordered list 4</li>
+        </ol>
+
+    <br><hr><br>
+
+    <!-- Table -->
+    <h1>11. Table</h1>
+    <h2>1-1. The basic of Table</h2>
+        <table border="1"> <!-- border function -->
+            <tr> <!-- table row -->
+                <th> Title 1</th> <!-- table head -->
+                <th> Title 2</th> 
+                <th> Title 3</th> 
+            </tr>
+            <tr>
+                <td>Cell 1-1</td> <!-- table data -->
+                <td>Cell 1-2</td>
+                <td>Cell 1-3</td>
+            </tr>
+        </table>
+        <br>
+
+    <h2>1-2. The merge of Table</h2>
+    <h3>1-2-1. colspan</h3>
+    <table border="1" width="200" height="200">
+        <tr>
+            <td colspan="200">1</td>
+            <!-- <td>2</td> -->
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <br>
+
+    <h3>1-2-2. rowspan</h3>
+    <table border="1" width="200", height="200">
+        <tr>
+            <td rowspan="200">1</td>
+            <td width="100", height="100">2</td>
+        </tr>
+        <tr>
+            <!-- <td>3</td> -->
+            <td width="100", height="100">4</td>
+        </tr>
+    </table>
+</body>
+</html>

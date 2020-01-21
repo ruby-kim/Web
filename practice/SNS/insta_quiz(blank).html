@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>나만의 SNS 만들기</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <body>
+        <div style="width: 540px;">
+            <!-- 헤더(header) -->
+            <header>
+                <!-- 내비게이션(nav) -->
+                <nav> 
+                    <!-- 중앙 로고 -->
+                    <div>
+                        <a href="insta_main(blank).html">
+                            <h1 style="font-size:42px">enstagram</h1>
+                        </a>
+                    </div>
+                    <!-- 우측 상단 아이콘(3개) -->
+                    <div style="float: right;">
+                        <!-- To do 1 : a, img(32번 ~ 40번 라인)
+                                    1-1. 이미지 파일(img 폴더 내)를 활용한 아이콘 설정
+                                    1-2. alt 값은 이미지 파일명과 동일하게 설정
+                                    1-3. width, height 모두 40px로 설정
+                                    1-4. 클릭 시 지정 페이지로 이동 할 수 있게 링크 설정 
+                                            이미지 파일명   /   클릭 시 이동할 경로(페이지)
+                                            - user         /   insta_main(blank).html로 이동
+                                            - clipboard    /   insta_quiz(blank).html로 이동
+                                            - webcam       /   insta_ml(blank).html로 이동 -->
+                        <a href="insta_main(blank).html">
+                            <img src="img/user.png" alt="insta_main(blank).html" width="40px" height="40px">
+                        </a>
+                        <a href="insta_quiz(blank).html">
+                            <img src="img/clipboard.png" alt="insta_quiz(blank).html" width="40px" height="40px">
+                        </a>
+                        <a href="insta_ml(blank).html">
+                            <img src="img/webcam.png" alt="insta_ml(blank).html" width="40px" height="40px">
+                        </a>
+                    </div>
+                </nav>                
+            </header>
+            <!-- 메인 내용(section) -->
+            <section>
+                <div>
+                <!-- 콘텐츠 영역 -->
+                    <div>
+                        <!-- 게시글 (하단 영역 복사해서 입력) -->
+                        <div">
+                            <!-- 프로필 영역 -->
+                            <div>
+                                <!-- 작성자 프로필 사진 -->
+                                <img src="img/profile.jpg" alt="profile" style="width: 40px; height: 40px;">
+                                <!-- 작성자 아이디 -->
+                                <div>
+                                    <div>kimminji</div>
+                                </div>
+                            </div>
+                            <!-- 심리테스트 영역 -->
+                            <!-- 제목 -->
+                            <div>
+                                <h3><b>심심할때 심리테스트 &nbsp;</b></h3>
+                            </div>
+                            <!-- 내용 -->
+                            <div>
+                                <div id="quiz">
+                                    <!-- To do 2 : input(76번 라인)
+                                                2-1. 타입은 텍스트
+                                                2-2. name은 name으로 설정
+                                                2-3. placeholder은 '이름을 입력해주세요'로 설정 -->
+                                    <!-- 페이지 1 -->
+                                    <article id="p1">
+                                        <!-- 내용 -->
+                                        <h3><b>이름</b></h3> 
+                                        <input type="text" name="name" placeholder="이름을 입력해주세요"><br>
+                                        <!-- 버튼 -->
+                                        <button onclick="">
+                                            다음으로
+                                        </button><br><br>
+                                    </article>
+                                    <!-- To do 3 : input(97번 ~ 102번 라인) 
+                                                3-1. 타입은 라디오
+                                                3-2. name은 a1
+                                                3-3. 내용, 값 설정
+                                                                내용                /   값(value)
+                                                        - 꿈을 잘 꾸지 않는다       /       6
+                                                        - 날아오르거나 떠오르는 꿈  /       5
+                                                        - 떨어지는 꿈               /       4
+                                                        - 무언가를 찾는 꿈          /       3
+                                                        - 싸우거나 애쓰는 꿈        /       2
+                                                        - 기분 좋은 느낌의 꿈       /       1 -->
+                                    <!-- 페이지 2 -->
+                                    <article id="p2">
+                                        <h3><b>내가 평소에 자주 꾸는 꿈은?</b></h3>
+                                        <form name="q1">
+                                            <input type="radio" name="a1" value="6">꿈을 잘 꾸지 않는다<br>
+                                            <input type="radio" name="a1" value="5">날아오르거나 떠오르는 꿈<br>
+                                            <input type="radio" name="a1" value="4">떨어지는 꿈<br>
+                                            <input type="radio" name="a1" value="3">무언가를 찾는 꿈<br>
+                                            <input type="radio" name="a1" value="2">싸우거나 애쓰는 꿈<br>
+                                            <input type="radio" name="a1" value="1">기분 좋은 느낌의 꿈<br>
+                                        </form>
+                                        <br>
+                                        <!-- 버튼 -->
+                                        <button onclick="">
+                                            다음으로
+                                        </button><br><br>
+                                    </article>
+                                    <!-- To do 4 : 선택 타입(121번 ~ 125번 라인 / name은 q2)으로 설정
+                                                4-1. 옵션은 3개
+                                                4-2. 내용, 값 설정
+                                                            내용    /   값(value)
+                                                    - 아침          /       2
+                                                    - 오후나 저녁   /       4
+                                                    - 늦은 밤       /       6
+                                                4-3. 기본 선택사항으로는 아침으로 설정 -->
+                                    <!-- 페이지 3 -->
+                                    <article id="p3">
+                                        <h3><b>하루 중 기분이 가장 좋은 시간대는?</b></h3>
+                                        <select>
+                                            <option name="q2" value="2" selected>아침</option>
+                                            <option name="q2" value="4">오후나 저녁</option>
+                                            <option name="q2" value="6">늦은 밤</option>
+                                        </select>
+                                        <br><br>
+                                        <!-- 버튼 -->
+                                        <button onclick="">
+                                            다음으로
+                                        </button><br><br>
+                                    </article>
+                                    <!-- To do 5 : input(146번 ~ 150번 라인) 
+                                                5-1. 타입은 라디오
+                                                5-2. name은 a3
+                                                5-3. 내용, 값 설정
+                                                                        내용                 /   값(value)
+                                                        - 상대방을 터치한다                  /       7
+                                                        - 내 몸을 만지작거린다               /       6
+                                                        - 한 손이나 양손을 허리에 올린다     /       5
+                                                        - 내 팔짱을 낀다                     /       4
+                                                        - 두 손을 마주 잡는다                /       2 -->
+                                    <!-- 페이지 4 -->
+                                    <article id="p4">
+                                        <h3><b>나는 사람들과 이야기할 때, 어떤 스타일?</b></h3>
+                                        <form name="q3">
+                                            <input type="radio" name="a3" value="7">상대방을 터치한다<br>
+                                            <input type="radio" name="a3" value="6">내 몸을 만지작거린다<br>
+                                            <input type="radio" name="a3" value="5">한 손이나 양손을 허리에 올린다<br>
+                                            <input type="radio" name="a3" value="4">내 팔짱을 낀다<br>
+                                            <input type="radio" name="a3" value="2">두 손을 마주 잡는다
+                                        </form>
+                                        <br>
+                                        <!-- 버튼 -->
+                                        <button onclick="">
+                                            다음으로
+                                        </button><br><br>
+                                    </article>
+                                    <!-- To do 6 : input(171번 ~ 174번 라인) 
+                                                6-1. 타입은 라디오
+                                                6-2. name은 a4
+                                                6-3. 내용, 값 설정
+                                                                        내용          /   값(value)
+                                                        - 즐거움을 숨기지 않는다      /       6
+                                                        - 가볍게 웃는다               /       5
+                                                        - 크게 웃지 않으려고 노력한다 /       4
+                                                        - 소리내지 않고 웃는다        /       3 -->
+                                    <!-- 페이지 5 -->
+                                    <article id="p5">
+                                        <h3><b>나는 재밌는 일이 있으면?</b></h3>
+                                        <form name="q4">
+                                            <input type="radio" name="a4" value="6">즐거움을 숨기지 않는다<br>
+                                            <input type="radio" name="a4" value="5">가볍게 웃는다<br>
+                                            <input type="radio" name="a4" value="4">크게 웃지 않으려고 노력한다<br>
+                                            <input type="radio" name="a4" value="3">소리나재 않고 웃는다<br>
+                                        </form>
+                                        <br>
+                                        <!-- 버튼 -->
+                                        <button onclick="">
+                                            다음으로
+                                        </button><br><br>
+                                    </article>
+                                    <!-- To do 7 : input(198번 ~ 204번 라인) 
+                                                7-1. 타입은 라디오
+                                                7-2. name은 a5
+                                                7-3. 내용, 값 설정
+                                                               내용        /   값(value)
+                                                        - 검정             /       7
+                                                        - 빨강 또는 주황   /       6
+                                                        - 노랑 또는 파랑   /       5
+                                                        - 녹색             /       4
+                                                        - 진파랑 또는 보라 /       3
+                                                        - 하양             /       2
+                                                        - 갈색 또는 회색   /       2 -->
+                                    <!-- 페이지 6 -->
+                                    <article id="p6">
+                                        <h3><b>내가 가장 좋아하는 색깔은?</b></h3>
+                                        <form name="q5">
+                                            <input type="radio" name="a5" value="7">검정<br>
+                                            <input type="radio" name="a5" value="6">빨강 또는 주황<br>
+                                            <input type="radio" name="a5" value="5">노랑 또는 파랑<br>
+                                            <input type="radio" name="a5" value="4">녹색<br>
+                                            <input type="radio" name="a5" value="3">진파랑 또는 보라<br>
+                                            <input type="radio" name="a5" value="2">하양<br>
+                                            <input type="radio" name="a5" value="2">갈색 또는 회색
+                                        </form>
+                                        <br>
+                                        <!-- 버튼 -->
+                                        <button onclick="">
+                                            결과보기
+                                        </button><br><br>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- copyright 및 이메일 기입 영역 -->
+            <footer>
+                <div>
+                    <b>&copy;copyright kimminji</b><br>
+                    encore@encore.com
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
+
