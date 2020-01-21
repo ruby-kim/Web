@@ -323,4 +323,15 @@ format: ```<a href="moving_scheduled_path">```
     </form>
   ```
   ![image](https://user-images.githubusercontent.com/38516906/72771407-271ee400-3c44-11ea-9c45-081cb63aaccd.png)
+  
+  * submit input: query (using Naver engine)
+  ```
+  <h2>1-8. input: query(submit)</h2>
+    <form action="https://search.naver.com/search.naver?">
+        Input text:<br>
+        <input type="text" name="query" placeholder="Input what you want">
+        <input type="submit">
+    </form>
+  ```
+  ![image](https://user-images.githubusercontent.com/38516906/72777028-9225e600-3c57-11ea-86e8-2f37883682f6.png)
 
