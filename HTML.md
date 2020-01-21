@@ -148,3 +148,44 @@ format: ```<a href="moving_scheduled_path">```
 </div>
 ```
 ![image](https://user-images.githubusercontent.com/38516906/72704643-bc669d80-3b9c-11ea-9574-269e3217036f.png)
+
+<br>
+
+## 9. List
+1. The basic of List
+```
+<h2>1-1. dt / dt / dd </h2>
+    <h3>The basic of List</h3>
+        <dl>
+            <dt>Term 1</dt> <!-- dt: data -->
+                <dd>- the description about Term 1</dd> <!-- dd: data description-->
+            <dt>Term 2</dt>
+                <dd>- the description about Term 2 </dd>
+        </dl>
+```
+![image](https://user-images.githubusercontent.com/38516906/72767457-45321780-3c37-11ea-952f-627f00d67449.png)
+
+2. ul, ol, li
+  * ul, li
+  ```
+  <h3>1-2-1. ul / li</h3> <!-- unordered list -->
+        <ul>
+            <li>unordered list 1</li>
+            <li>unordered list 2</li>
+            <li>unordered list 3</li>
+            <li>unordered list 4</li>
+        </ul>
+  ```
+  ![image](https://user-images.githubusercontent.com/38516906/72767546-9c37ec80-3c37-11ea-8d30-619d6b6dffa7.png)
+
+  * ol, li
+  ```
+  <h3>1-2-2. ol / li</h3> <!-- ordered list -->
+        <ol type="A"> <!-- default: 1,2,3,.. (only write ol)-->
+            <li>ordered list 1</li>
+            <li>ordered list 2</li>
+            <li>ordered list 3</li>
+            <li>ordered list 4</li>
+        </ol>
+  ```
+  ![image](https://user-images.githubusercontent.com/38516906/72767571-c25d8c80-3c37-11ea-9b03-f2d7d180c03c.png)
