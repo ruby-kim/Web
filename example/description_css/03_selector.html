@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0>
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <title>03_selector</title>
+    <style>
+        /* Selector
+        tag: just write tag
+        class: write dot(.)
+        id: write # 
+        */
+        p {
+            background-color: aqua;
+        }
+        #myId{
+            background-color: greenyellow;
+            text-align: center;
+        }
+        .myClass{
+            background-color: hotpink;
+        }
+        div, span, #pId, .newClass{
+            color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>5. Selector</h1>
+    <h2>5-1. Tag selector</h2>
+    <p>Let's select p tag</p>
+    <p>This p tag is also selected</p>
+    <p>This p tag is also selected</p>
+    <br>
+
+    <h2>5-2. Id selector</h2>
+    <p>I'll apply <b>id</b> to p tag</p>
+    <p id="myId">The result is like this</p>
+    <p>If id is not exist, everything goes back to the way it was</p>
+    <br><br>
+
+    <h2>5-3. Class selector</h2>
+    <h3>I'll apply <b>class</b> to h3 tag</h3>
+    <h3 class="myClass">The result is like this</h3>
+    <br><br>
+
+    <h2>5-4. Group selector</h2>
+    <div>This is div</div>
+    <span>This is span</span>
+    <p id="pId">This is a p applying to id</p>
+    <h4 class="newClass myClass">This is a h4 applying to classes</h4>
+
+</body>
+
+</html>
