@@ -1,0 +1,26 @@
+div {
+    width: 200px;
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+    border: 4px solid grey;
+}
+
+/* 4n-3 번째 - 예) 1, 5, 9번째 div 요소에 적용 */
+div:nth-of-type(4n-3) {
+    background-color: lightgoldenrodyellow;
+}
+
+/* 4n-2 번째 - 예) 2, 6, 10번째 div 요소에 적용 */
+div:nth-of-type(4n-2) {
+    background-color: lightblue;
+}
+
+/* 4n-1 번째 - 예) 3, 7, 11번째 div 요소에 적용 */
+div:nth-of-type(4n-1) {
+    background-color: lightcoral;
+}
+
+/* 4n 번째 - 예) 4, 8, 12번째 div 요소에 적용 */
+div:nth-of-type(4n) {
+    background-color: lightgreen;
+}

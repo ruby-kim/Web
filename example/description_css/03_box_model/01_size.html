@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 테두리</title>
+    <link rel="stylesheet" href="./div.css">
+    <style>
+        /***** Absolute size & Relative size *****/
+        div{
+            border: 1px solid grey;
+            background-color: lightblue;
+        }
+
+        /* Absolute size relative to pixel on the screen*/
+        .px{
+            width: 200px;
+            height: 200px;
+        }
+
+        /* the percent of parents element*/
+        .percent {
+            width: 50%;
+            height: 50%;
+        }
+
+
+        /***** 실무에서 잘 안씀 *****/
+        /* 자신의 폰트 크기가 1이라고 할 때 배수 단위 */
+        .em {
+            font-size: 10px;
+            width: 20em;
+            height: 10em;
+        }
+
+        /* 상위 요소의 폰트 크기를 상속 받음 */
+        .em2 {
+            width: 5em;
+            height: 5em;
+        }
+
+         /* 최상위 요소 (html)의 폰트 크기 기준 (상속 X) */
+        .rem {
+            width: 20rem;
+            height: 10rem;
+        }
+
+         /* 상위 요소의 폰트 크기에 영향 받지 않음 */
+        .rem2 {
+            width: 20rem;
+            height: 10rem;
+        }
+
+        /* 최대 & 최소 */
+        .maxmin {
+            min-width: 300px;
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>크기 조정</h1>
+    <h2>절대 크기 & 상대 크기</h2>
+    <div>
+        default setting: auto
+        (가로 100%, 세로는 컨텐츠 양에 따라 달라짐)
+    </div>
+    <br>
+    <div class="px">
+        px를 통한 크기 조정
+    </div>
+    <br>
+    <div class="percent">
+        size setting using %
+        
+    </div>
+    <br>
+    <div class="em">
+        em을 통한 크기 조정
+        <div class="em2">
+            em 속 em
+        </div>
+    </div>
+    <br>
+    <div class="rem">
+        rem을 통한 크기 조정
+        <div class="rem2">
+            rem 속 rem
+        </div>
+    </div>
+    <br>
+    <hr>
+    <h2>최대 최소</h2>
+    <div class="maxmin">
+        상대적으로 크기가 변하는 요소에 대해
+        최대&최소값을 지정해 줄 수 있음
+    </div>
+</body>
+
+</html>
