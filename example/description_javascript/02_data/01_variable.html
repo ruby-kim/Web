@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>변수와 상수</h1>
+
+    <h2>var</h2>
+    <script>
+        // 변수(變數)란 변화하는 값에 특정한 이름을 붙여준 것
+        // 선언 (변수의 자리 만들어주기)
+        // undefined -> 선언만하고 초기화 안해줬을 때의 변수값
+        // 초기화 (변수에 값 지정해주기)
+        // = 을 통해 값을 대입한다
+        var x;
+        x = 1;
+
+        // 한꺼번에 진행
+        var x = 3;
+
+        // 여러 개를 한 번에!
+        var a = b = c = 2;
+        
+        // 선언한 다음에는 맘껏 초기화를 할 수 있음
+        // (가장 마지막에 초기화=대입 된 값이 변수의 값)
+        
+        // 연산자를 통해 값을 계산해서 대입할 수 있음 (연산자는 차후 설명)
+        
+    </script>
+
+    <h2>let</h2> <!-- 이거를 잘 쓴다!!!!!!!!!!!!!! -->
+    <script>
+        // var에는 치명적인 문제가 있는데
+        // var를 통해 생성된 함수는 계속 선언할 수 있음
+        // 선언이라는 것이 의미적으로 중복되지 않는 값들을 추가로 만들어내는 것인데
+        // var는 중복 선언을 허용하다보니 실수 혹은 여러 스크립트 간 혼합될 확률이 높음
+        // 그래서 만들어진 것이 let
+        let y = 15;
+
+        // 중복해서 선언하면 오류가 남
+        {
+            // block 안에는 b라는 변수가 없는 상태
+            // block 안에는 새롭게 선언 가능 (이후 전역변수, 지역변수 개념에서 상세 설명)
+            // let y;   
+        }
+    </script>
+
+    <h2>const</h2>
+    <script>
+        // 한 번 선언&초기화 하면 변화하면 안 되는 수의 경우 const를 통해 상수(常數) 선언 가능
+        const z = 10;
+        // z = 20;
+        // 두 번 이상 초기화할 수 없음
+        {
+            // 역시나 block 안에서는 새롭게 가능
+            const z = 10;   
+        }
+    </script>
+    
+</body>
+</html>

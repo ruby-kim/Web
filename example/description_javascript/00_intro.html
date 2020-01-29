@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <style>
+        div {
+            background-color: brown;
+            color: white;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        .italic{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript 기본 기능</h1>
+
+    <h3>HTML Content Change</h3>
+    <div id="ex1">before</div>
+    <!-- document.getElementById('아이디명').innerhtml='바꾸고자 하는 내용' -->
+    <!-- JavaScript는 ""(큰따옴표)와 ''(작은따옴표) 혼용해서 사용 -->
+    <button onclick="document.getElementById('ex1').innerHTML='after'">
+        change
+    </button>
+    <button onclick="document.getElementById('ex1').innerHTML='before'">
+        clear
+    </button>
+
+    <hr>
+
+    <h3>HTML Property Change</h3>
+    <div id="ex2">TEST</div>
+    <button onclick="document.getElementById('ex2').classList.add('bold')">굵게</button>
+    <button onclick="document.getElementById('ex2').classList.add('italic')">기울게</button>
+    <button onclick="document.getElementById('ex2').classList.remove('bold')">굵게 제거</button>
+    <button onclick="document.getElementById('ex2').classList.remove('italic')">기울게 제거</button>
+
+    <hr>
+
+    <h3>HTML Style Change</h3>
+    <div id="ex3">TEST</div>
+    <button onclick="document.getElementById('ex3').style.visibility='hidden'">cover</button>
+    <button onclick="document.getElementById('ex3').style.visibility='visibile'">recover</button>
+    <button onclick="document.getElementById('ex3').style.visibility='none'">remove</button>
+    <hr>
+</body>
+</html>

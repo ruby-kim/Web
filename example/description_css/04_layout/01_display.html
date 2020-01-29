@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* block */
+        div.auto {
+            background-color: tomato;
+            padding: 20px;
+        }
+
+        div.sizing {
+            
+            background-color: goldenrod;
+            padding: 20px;
+            width: 300px;
+        }
+
+        h2 {
+            background-color: khaki;
+        }
+
+        /* span */
+        span {
+            background-color: red;
+            color: white;
+            border: 1px solid green;
+            padding: 10px;
+
+            /* width, height, margin-top, margin-bottom 프로퍼티를 지정할 수 없다. */
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            /* 상, 하 여백은 line-height로 지정한다. */
+            line-height: 200px;
+        }
+
+        /* inline-block */
+        .wrapper {
+            font-size: 0;
+            /*요소간 간격을 제거*/
+        }
+
+        .inline-block {
+            /* inline-block 요소 수직 정렬 */
+            border: 3px solid #73AD21;
+            font-size: 16px;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 70px;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 150px;
+        }
+
+        /* hidden & none */
+        div.show {
+            background-color: ivory;
+            border: 2px solid black;
+        }
+
+        p.none {
+            display: none;
+        }
+
+        /* security적으로 많이 사용됨 */
+        p.hidden { 
+            visibility: hidden;
+        }
+    </style>
+    <title>css display</title>
+</head>
+
+<body>
+    <h1>Block</h1>
+    <div class="auto">
+        <h2>블록 레벨 요소</h2>
+        <p>width, height 미지정 → width: 100%; height: auto;</p>
+    </div>
+    <div class="sizing">
+        <h2>블록 레벨 요소</h2>
+        <p>width: 300px → width: 300px; height: auto;</p>
+    </div>
+    <br>
+    <hr>
+    <h1>Inline</h1>
+    <h1>My <span>Important</span> Heading</h1>
+    <span>Inline</span>
+    <span>Inline</span><span>Inline</span>
+    <br>
+    <hr>
+    <h1>Inline-block</h1>
+    <div class="inline-block box1">inline-block height 70px</div>
+    <div class="inline-block box2">inline-block height 150px</div>
+
+    <div class="wrapper">
+        <div class="inline-block box1">inline-block height 70px</div>
+        <div class="inline-block box2">inline-block height 150px</div>
+    </div>
+    <br>
+    <hr>
+    <h1>HTML 요소 숨기기</h1>
+    <div class="show">
+        <p>이 아래의 단락은 display 속성값을 none으로 설정했습니다</p>
+        <p class="none">이 단락은 display 속성값을 none으로 설정했습니다.</p>
+    </div>
+    <br>
+    <div class="show">
+        <p>이 아래의 단락은 visibility 속성값을 hidden으로 설정했습니다.</p>
+        <p class="hidden">이 단락은 visibility 속성값을 hidden으로 설정했습니다.</p>
+    </div>
+    <p>visibility 속성값을 hidden으로 설정하면 눈에 보이지만 않을 뿐<br>
+        여전히 웹 페이지 내에 존재하게 됩니다!</p>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>출력</h1>
+    <!-- 개발자 도구 실행 필요 -->
+
+    <script>
+        // console.log() : 웹 브라우저(개발자 도구) 콘솔을 통해 데이터 출력
+        console.log("hi")
+    </script>
+
+    <script>
+        // alert() : 대화 상자를 띄워 데이터 출력
+        // alert('hello world!')
+    </script>
+    <button onclick="alert('Do not click button')">X</button>
+    <br><br>
+    <script>
+        // document.write() : 대화 상자를 띄워 데이터 출력
+        document.write("hello")
+        // script 블록 위치에 따라
+    </script>
+    <div id="place1"></div>
+
+    <script>
+        // innerHTML : 특정 요소를 찾아 그 안에 데이터 출력
+        // document.getElementById('아이디') 로 특정 요소를 찾아, 그 속에 innerHTML로 태그, 스타일 값 등을 넣어준다
+        document.getElementById('place1').innerHTML = "world"
+        //document.getElementById('place2').innerHTML = ":-)"
+    </script>
+    <div id="place2"></div>
+</body>
+
+</html>

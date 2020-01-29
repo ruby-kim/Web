@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+        // HTML 내부 script 태그 : head
+        //document.getElementById('head').innerHTML = "hello world";
+    </script>
+    <!-- 외부 script 파일 : head -->
+
+</head>
+<body>
+    <h1>JavaScript 적용</h1>
+    <div id="head">head</div>
+    <div id="body">body</div>
+    <div id="file">file</div>
+    <script>
+    // HTML 내부 script 태그 : body
+    document.getElementById('head').innerHTML = "hello world";
+    document.getElementById('body').style.backgroundColor = "red";
+    </script>
+    </script>
+    <!-- 외부 script 파일 : body -->
+    <script src="./02_myJS.js"></script>
+
+</body>
+</html>

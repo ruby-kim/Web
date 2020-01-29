@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바다사자의 이해</title>
+    <style>
+    /* To-do : 결과 웹 페이지 이미지와 주석을 보고, 빈 클래스에 적절한 클래스명 집어 넣기 & 주석 되어 있는 부분 풀어보면서 어떤 기능하는지 확인 */
+    /* 박스 설정 */
+    .sizing {
+        margin: auto;
+        width: 60%;
+    }
+    .bgimg {
+        background: rgba(0, 0, 0, 0.7) url(https://images.unsplash.com/photo-1504201267999-cc5d7124c541?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+        background-size: cover;
+        background-blend-mode: overlay;
+        background-position: 0 -140px;
+    }
+    .rd-15px {
+        border-radius: 15px;
+    }
+    .flt-lf{
+        float: left;
+    }
+    .flt-rt{
+        float: right;
+    }
+    
+    /* 테이블 설정 */
+    .table {
+        display: table;
+        clear: left;
+    }
+    .table div {
+        display: table-cell;
+    }
+    .onethird {
+        width: 33.3%;
+    }
+    .twothird {
+        width: 66.6%;
+    }
+
+    /* 시맨틱 요소별 설정 */
+    header {
+        margin: auto;
+        height: 160px;
+
+        color: whitesmoke;
+        font-size: 4rem;
+        font-family: "Gungsuh";
+        text-align: center;
+        text-shadow: 3px 3px black;
+    }
+    header div {
+        vertical-align: middle;
+    }
+    
+    nav {
+        overflow: auto;
+    }
+    nav ul {
+        float: right;
+        
+        margin: 20px;
+
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-block;
+
+        padding: 10px;
+
+        font-size: 1.3rem;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    nav li:hover {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    article {
+        overflow: auto;
+
+        margin: 10px 0 0;
+        border: 1px solid grey;
+        padding: 30px;
+
+        line-height: 1.6;
+    }
+    article img {
+        width: 40%;
+        margin: 25px;
+    }
+    article span {
+        color: #1b262c;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    article p {
+        color: #0f4c75;
+        font-size: 1.1rem;
+    }
+    article > div {
+        padding: 0 20px;
+    }
+    article div.table {
+        padding: 0 10px;
+    }
+    article div.table div {
+        padding: 0 10px;
+        text-align: left;
+    }
+    .ref {
+        font-style: italic;
+        text-align: right;
+        clear: left;
+    }
+
+    footer {
+        overflow: auto;
+
+        height: 100px;
+    }
+    footer div {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        margin-top: 50px;
+    }
+    footer img {
+        position: relative;
+        float: left;
+
+        height: 30px;
+        margin: 20px;
+    }
+    </style>    
+</head>
+<body>
+    <div class="sizing bgimg rd-15px">
+        <!--
+            1. 크기를 디스플레이의 60%, 좌우 중앙정렬
+            2. 배경 이미지 설정
+            3. 15px의 곡률 주기
+        -->
+        <header class="table">
+            <!-- 좌측에 위치한 테이블 요소로 만들기 -->
+            <div>
+                바다사자의 이해
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#shape">형태</a></li>
+                <li><a href="#size">크기</a></li>
+                <li><a href="#ecology">생태</a></li>
+                <li><a href="#etc">기타정보</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="sizing">
+        <!-- 디스플레이의 60%, 좌우 중앙정렬 -->
+        <article class="rd-15px">
+            <!-- 곡률 15px -->
+            <div>
+                <img class="rd-15px flt-lf" src="https://images.unsplash.com/photo-1553563777-e7f319af6b47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="바다사자1">
+                <!--
+                    1. 곡률 15px
+                    2. 이미지 좌측 float
+                -->
+                <span id="shape">형태</span><hr>
+                <p>3개 아종 가운데 형태적으로 가장 체구가 큰 아종이 독도의 바다사자다. 몸의 형태는 체구가 미끈하게 잘 빠진 방추형으로, 가늘고 조그만 귀와 짧은 꼬리를 가지고 있다. 전후의 네발은 수생생활의 적응에 따른 진화결과, 물고기의 지느러미와 같은 모양으로 변화하였다. 그러나 다섯 발가락의 발톱흔적은 그대로 남아 있다. 암수의 성적차이에 의한 형태차이가 뚜렷하여, 수컷은 암컷에 비해 돌출한 화살촉모양의 이마와 근육질의 가슴과 목 부위가 아주 잘 발달해 있다.</p>
+            </div>
+            <div class="table">
+                <!-- 좌측에 위치한 테이블 요소로 만들기 -->
+                <div class="onethird">
+                    <!-- 요소의 1/3 차지 -->
+                    <span id="size">크기</span><hr>
+                    <p>태어날 때의 몸의 크기는 길이 0.7m, 체중 5.5~6.4kg, 젖을 뗄 무렵에는 체중 25kg, 성체는 암컷의 경우 길이 1.5~1.8m, 체중 50~110kg, 수컷의 경우 길이 2.3~2.5m, 체중 440~563kg</p>
+                </div>
+                <div class="twothird">
+                    <!-- 요소의 2/3 차지 -->
+                    <span id="ecology">생태</span><hr>
+                    <p>주로 연안지역에서 생활하며, 하구에서도 발견된다. 1년 내내 무리를 지어 생활한다. 출산은 5월에서 6월에 걸쳐 1년에 1회 1마리를 육상에서 낳는다. 상륙장소와 번식장소는 육상으로, 번식양식은 일부다처제로 집단으로 번식한 것으로 알려져 있다. 울음소리는 날카롭게 짖는 듯한 소리의 크고 높은 음으로, ‘아윽 아윽’ 또는 ‘오엌 오엌’으로 들리며 멀리까지 전달된다. 먹이는 서식지에서 사냥할 수 있는 적당한 크기의 동물은 무엇이든지 포식하며, 50종 이상의 먹이동물이 알려져 있다. 주요 먹이는 오징어, 명태, 정어리, 연어 등이다. 천적은 범고래와 상어가 알려져 있다.</p>
+                </div>
+            </div>
+            <div>
+                <span id="etc">기타정보</span><hr>
+                <img class="flt-rt" src="https://images.unsplash.com/photo-1542985303-ce7a686c5e09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="바다사자2">
+                <p>기존 1종 3아종으로 분류해 오던 것을, 최근 분자유전자 와 형태적 형질의 차이를 고려하여 3개 종으로 구분되고 있다. 우리나라와 러시아연해주 및 일본연안의 동해의 바다사자 Zalophus japonicus (Peters, 1866), 북미 캘리포니아연안에 살고있는 캘리포니아 바다사자 Zalophus califonianus (Lesson, 1826), 남미 갈라파고스 군도에 살고 있는 갈라파고스 바다사자 Zalophus wollebaeki (Sivertsen, 1953)이다.<br>1970년대까지 동해에서 서식하고 있는 것으로 알려져 왔으나, 최근 20년 동안 목격된 사례가 없다.</p>
+            </div>
+            <div class="ref">[네이버 지식백과] 바다사자 (국립생물자원관 - 동물정보, 한상훈)</div>
+        </article>
+    </section>
+    <footer>
+        <div>
+            <a href="https://github.com/" target="_blank">
+                <img src="https://tettra.co/wp-content/uploads/2019/03/integrations-github-logo.png" alt="github">
+            </a>
+            <a href="https://unsplash.com/" target="_blank">
+                <img src="https://unsplash-assets.imgix.net/marketing/press-logotype.svg?auto=format&fit=crop&q=60" alt="unsplash">
+            </a>
+            <a href="https://terms.naver.com/" target="_blank">
+                <img src="https://mblogthumb-phinf.pstatic.net/20141203_173/dic_master_1417582673615KpXfe_JPEG/%C1%F6%BD%C4%B9%E9%B0%FA%B7%CE%B0%ED.jpg?type=w2" alt="naver_terms">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

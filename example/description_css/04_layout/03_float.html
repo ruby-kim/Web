@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* float image */
+    img {
+        float: left;
+        margin-right: 10px;
+        width: 240px;
+    }
+
+    /* float align */
+    /* 중앙 정렬은 X */
+    .box {
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+        border-radius: 6px;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .fleft {
+        float: left;
+    }
+
+    .fright {
+        float: right;
+    }
+
+    .red {
+        background: red;
+    }
+
+    .orange {
+        background: orange;
+    }
+
+    /* clear */
+    /* float 속성을 초기화 */
+    .left {
+        background-color: #FF8C00;
+        width: 150px;
+        height: 50px;
+        float: left;
+    }
+
+    .right {
+        background-color: #9932CC;
+        width: 150px;
+        height: 50px;
+        float: right;
+    }
+
+    p.clear {
+        clear: both;
+    }
+
+    /* over-flow clear-fix
+      넘친 내용 제대로 표현하기
+    */
+    .overflow div {
+        border: 3px solid #73AD21;
+        padding: 5px;
+    }
+
+    img.left {
+        width: 245px;
+        height: 185px;
+
+    }
+
+    #second {
+
+    }
+
+    .good {
+
+    }
+
+    /* overflow 속성 */
+    .overflowProp div {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        margin: 30px;
+        font-size: 1.2em;
+        border-radius: 6px;
+        border-color: gray;
+        border-style: dotted;
+        float: left;
+    }
+
+    .visible {
+        overflow: visible;
+    }
+
+    .hidden {
+        overflow: hidden;
+    }
+
+    .scroll {
+        overflow: scroll;
+    }
+
+    .auto {
+        overflow: auto;
+    }
+
+    /* float 속성을 통한 레이아웃 */
+    div.page {
+        border: 3px solid #CD5C5C;
+        overflow: auto;
+    }
+    
+    div.page h2 {
+        text-align: center;
+    }
+
+    header {
+        border: 3px solid #FFD700;
+    }
+
+    nav {
+        border: 3px solid #FF1493;
+        width: 150px;
+        float: right;
+    }
+
+    section {
+        border: 3px solid #00BFFF;
+        margin-left: 156px;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    footer {
+        border: 3px solid #00FA9A;
+    }
+    </style>
+    <title>CSS Float</title>
+</head>
+
+<body>
+  <h1>Float</h1>
+  <h2>Image Float</h2>
+  <img src="https://image.flaticon.com/icons/svg/1623/1623681.svg">
+  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, illo consequatur. Aspernatur nisi provident
+    amet sequi cum, rerum ullam repudiandae molestiae deserunt? Perspiciatis obcaecati sunt repudiandae libero magnam
+    fugit saepe.
+    Odio tempora corporis, nostrum harum aspernatur quisquam reprehenderit odit dolorum fuga dolorem sunt doloribus
+    laudantium. Velit tenetur nulla fugit excepturi sit, odit exercitationem blanditiis vel voluptate! Mollitia nihil
+    maxime itaque!
+    Sapiente facilis explicabo temporibus qui itaque sequi adipisci quos consequuntur. Officiis optio doloremque, fugiat
+    quibusdam ea cumque. Illum, fugiat. Earum repellat quod veritatis eaque consequatur repellendus officia doloremque
+    laborum commodi.
+    Quia doloremque vero eveniet id consequuntur aut, accusantium quas odit deserunt, blanditiis rem accusamus nulla
+    saepe illo amet alias voluptatem iusto nesciunt explicabo nisi voluptate! Dolores, praesentium? Cumque, a assumenda.
+    Reiciendis repudiandae soluta unde, deserunt modi asperiores quas, illo error tempore labore molestiae ullam,
+    exercitationem suscipit fugit non. Cupiditate nulla aliquam quod explicabo quisquam atque unde nemo voluptas
+    consectetur praesentium.</div>
+  <br>
+  <hr>
+  <h2>float 정렬</h2>
+  <div class="container">
+    <div class="box fleft red"> 1 </div>
+    <div class="box fleft orange"> 2 </div>
+    <div class="box fright red"> 3 </div>
+    <div class="box fright orange"> 4 </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <h2>clear 속성을 이용한 위치 조정</h2>
+  <div>
+    <div class="left">왼쪽 끝에 위치하고 싶은 요소</div>
+    <div class="right">오른쪽 끝에 위치하고 싶은 요소</div>
+  </div>
+  <p class="clear">이 글자를 아래쪽에 제대로 출력하고 싶어요!</p>
+  <br>
+  <hr>
+  <h2>overflow 속성을 이용한 크기 조정</h2>
+  <div class="overflow">
+    <div>이미지와 함께 하고 싶은 내용
+      <img src="https://image.flaticon.com/icons/svg/1390/1390890.svg" alt="pot">
+    </div>
+    <p id="second"><br>overflow 속성값을 auto로 주면
+      자동으로 컨테이너 요소의 크기도 함께 늘어납니다!</p>
+    <div class="good">이미지와 함께 하고 싶은 내용
+      <img src="https://image.flaticon.com/icons/svg/1390/1390890.svg" alt="pot">
+    </div>
+  </div>
+  <br>
+  <hr>
+  <h2>overflow property</h2>
+  <div class="overflowProp">
+    <div class="visible">
+      <h3>visible</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.
+    </div>
+    <div class="hidden">
+      <h3>hidden</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.
+    </div>
+    <div class="scroll">
+      <h3>scroll</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.
+    </div>
+    <div class="auto">
+      <h3>auto</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua.
+    </div>
+    <span>
+  </div>
+  </div>
+  <br style="clear: left;">
+  <br><br><br><br><br><br>
+  <hr>
+  <h2>float layout</h2>
+  <div></div>
+  <h1>float 속성을 이용한 레이아웃</h1>
+	<div class="page">
+		<header>
+			<h2>header 영역</h2>
+		</header>
+		<nav>
+			<h2>nav 영역</h2>
+			<p>여기에는 보통 메뉴가 들어갑니다.</p>
+		</nav>
+		<section>
+			<h2>section 영역</h2>
+			<p>여기에는 페이지에 해당하는 내용이 들어갑니다.<br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sapien suscipit tincidunt ullamcorper. Cras ac sem sed mauris maximus rhoncus vel in metus. Nam pharetra arcu sit amet dolor interdum, eget scelerisque libero finibus. Phasellus quis vulputate ante. Fusce sit amet viverra justo. Donec id elementum mauris. Nam id porttitor nisl, et suscipit nunc. Vestibulum sit amet volutpat quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis placerat sem eu facilisis ultricies.
+			</p>
+		</section>
+		<footer>
+			<h2>footer 영역</h2>
+		</footer>
+</body>
+
+</html>

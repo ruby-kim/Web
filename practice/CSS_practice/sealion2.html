@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>바다사자의 이해</title>
+    <style>
+    div {
+        /*  box-sizing을 border-box로 설정
+            좌우 중앙 정렬
+            */
+    }
+    #bg {
+        /*  가로 640px, 세로 480px
+            배경색 rgba(20, 20, 20, 0.7) 
+            (rgba : https://webdir.tistory.com/406)
+            배경 이미지 : https://images.unsplash.com/photo-1553563777-e7f319af6b47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+            반복 없음
+            배경 이미지 사이즈 : 900px 675px
+            배경 이미지 x축 방향으로 30px 이동
+            상단 패딩 100px
+            */
+        width: 640px;
+        height: 480px;
+        background: rgba(20,20,20,0.7) url(https://images.unsplash.com/photo-1553563777-e7f319af6b47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80) no-repeat;
+        background-size: 900px 675px;
+        background-position: 0px -30px;
+        padding-top: 100px;
+        background-blend-mode: darken;
+        /* 참고 : https://coderap.tistory.com/137 */
+    }
+    #content{
+        /*  가로 : 부모 요소의 50%
+            글자색 흰색, 텍스트 중앙정렬, 글자 크기 11px
+            테두리 흰색 실선 10px, 패딩 16px
+        */
+        width: 50%;
+        color: white;
+        text-align: center;
+        font-size: 11px;
+        border: solid white 10px;
+        padding: 16px;
+        display: table;
+        margin: 60px auto;
+        /* 내부의 컨텐츠를 가운데 정렬하기 위해 table 사용 */
+    }
+    </style>    
+</head>
+<body>
+    <div id="bg">
+        <div id="content">
+            <h1>바다사자의 형태</h1>
+            <p>3개 아종 가운데 형태적으로<br>
+            가장 체구가 큰 아종이 독도의 바다사자다.<br>
+            몸의 형태는 체구가 미끈하게 잘 빠진 방추형으로,<br>
+            가늘고 조그만 귀와 짧은 꼬리를 가지고 있다.</p>
+            <p>전후의 네발은 수생생활의 적응에 따른 진화결과,<br>
+            물고기의 지느러미와 같은 모양으로 변화하였다.<br>
+            그러나 다섯 발가락의 발톱흔적은 그대로 남아 있다.</p>
+            <p>암수의 성적차이에 의한 형태차이가 뚜렷하여,<br>
+            수컷은 암컷에 비해 돌출한 화살촉모양의 이마와<br>
+            근육질의 가슴과 목 부위가 아주 잘 발달해 있다.</p>
+        </div>
+    </div>    
+</body>
+</html>
