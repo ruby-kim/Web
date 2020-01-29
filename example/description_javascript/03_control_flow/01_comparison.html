@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>조건 관련 연산자</h1>
+    <h2>비교 연산자</h2>
+    <script>
+        console.log("[비교 연산자]");
+        // 일반적으로 '부등호/등호'와 같은 방식으로 연산
+        let a = 10;
+        let b = 20;
+        console.log(a == 10); //true
+        console.log(a == 11); //false
+        console.log(a >= b); //false
+        console.log(a <= b); //true
+        console.log(a > b); //false
+        console.log(a < b); //true
+        
+        // !는 not을 의미함, 즉 !=은 같지 않다를 의미
+        console.log(a != b); //true
+
+        // ===, !== (타입도 같이) ==는 동등 연산자, ===는 일치 연산자
+        let x = 10;
+        let y = '10';
+        
+        // type을 알려주는 연산자 (typeof(피연산자))
+        console.log(typeof(x), typeof(y));
+        console.log(x == y); //true(숫자를 문자열로 바꿔서 비교)
+        console.log(x === y); //false(type까지 맞춰야 함)
+
+    </script>
+    <h2>논리 연산자</h2>
+    <script>
+        console.log("[논리 연산자]");
+        let t = true;
+        let f = false;
+        
+        // 두 피연산자 모두가 참이어야 참 (논리 AND 연산)
+        console.log(t && f); //false
+
+        // 두 피연산자 중 하나 이상이 참이어야 참 (논리 OR 연산)
+        console.log(t || f); //true
+
+        // 참/거짓 값을 바꿈 (true->false, false->true) (논리 NOT 연산)
+        console.log(!true); //false
+        console.log(!false); //true
+    </script>
+</body>
+</html>

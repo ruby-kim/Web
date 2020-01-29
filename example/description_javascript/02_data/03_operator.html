@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>연산자</h1>
+    
+    <h2>산술연산자</h2>
+    <script>
+        // 사칙연산을 다루는 가장 기본적이고 많이 사용하는 연산자
+        // 연산자의 대상에 되는 값 = 피연산자
+        console.log(1+2);
+        console.log(1-2);        
+        console.log(1*2);        
+        console.log(1/2);        
+        
+        // %(모듈러스) : 나머지 값
+        console.log(1%2);
+        
+        // **(제곱)
+        console.log(2**3);
+
+        // 괄호에 따른 우선순위
+        console.log(4+3*2);
+        console.log((4+3)*2);
+        
+        // 변수도 연산자로 계산 가능
+        let a = 10; b = 15;
+        console.log(a+b);
+        
+        // 문자열이 포함되었을 경우, 덧셈 연산시 결합시켜줌
+        console.log("hello" + '2020');
+        
+        // 피연산자를 1씩 증가 혹은 감소시킬 때 사용하는 연산자 (증감연산자)
+        let test = 1;
+        test = test + 1;
+        console.log(`test`, test);
+        
+        // 증감연산자가 오른쪽에 있으면 연산을 수행 후 값을 증감시킴
+        test++;
+        console.log(`test`, test);
+        console.log(`test`, test++);
+        
+        // 증감연산자가 왼쪽에 있으면 값을 증감시키고 연산을 수행
+        console.log(`test`, ++test);
+        console.log(`test`, test++ + 10);        
+    </script>
+    
+    <h2>대입연산자</h2>
+    <script>
+        // 변수에 값을 대입할 때 사용
+        let x = 10;
+        console.log(x);
+        
+        // 산술 연산자와 결합한 다양한 복합 대입 연산자가 존재
+        console.log(x+=1);
+    </script>
+</body>
+</html>

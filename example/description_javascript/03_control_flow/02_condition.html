@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>조건문</h1>
+    <h2>if</h2>
+    <script>
+    // 조건을 만족할 때의 실행을 정해줌
+    console.log("[if]");
+    let age = 23;
+    age = 25;
+    if(age>=20){
+        console.log("선거를 할 수 있네요");
+    }
+    else{
+        console.log("선거를 할 수 없네요");
+    }
+    
+    </script>
+    <h2>else</h2>
+    <script>
+        // 조건을 만족하지 않을 때에 어떤 내용을 실행할지도 작성
+        console.log("[else]")
+        let random = Math.random() // 0 이상 1 미만의 값을 임의로 만들어주는 함수(기능)
+
+    </script>
+    <h2>else if</h2>
+    <script>
+        // 다양한 조건을 지정하는 방법
+        // 위에 있는 부분이 먼저 검사되므로 if-else if 조건문 간의 순서를 잘 생각해야함
+        console.log("[else if]")
+        // let num = prompt("몇 살이세요?") // 값을 입력 받을 수 있는 창을 띄우는 함수(기능)
+        /* if (!parseInt(num)) {
+            // prompt는 입력 받은 값을 모두 문자열로 인식하기 때문에 숫자로 바꿔줘야 함
+            // parseInt라는 함수를 사용하면 숫자로 된 문자열을 숫자로 바꿔줄 수 있음
+            alert("숫자를 입력해주세요!")
+        } else if (num >= 30) {
+            alert("30대 이상이시네요.")
+        } else if (num >= 27) {
+            alert("20대 후반이시네요.")
+        } else if (num >= 23) {
+            alert("20대 중반이시네요.")
+        } else if (num >= 20) {
+            alert("20대 초반이시네요.")
+        } else {
+            alert("10대 이하시네요.")
+        }
+        */
+    </script>
+</body>
+</html>
