@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>문자열</h1>
+
+    <h2>문자열 길이</h2>
+    <script>
+        // 문자열의 길이는 length 프로퍼티로 표시 가능 (배열과 유사)
+        const text1 = "가나다라마바사아자차카타파하";
+        document.write(text1 + " => " + text1.length);
+    </script>
+
+    <h2>문자열 선택</h2>
+    <script>
+        const text2 = "상화좌우 동서남북";
+        // charAt() 메소드 : chatAt(인덱스)
+        // 인덱스 셀 때 공백도 문자!!
+        document.write("charAt(): [" + text2 + "]의 4번째 글자는 [" +text2.charAt(4-1) + "]입니다.<br>");
+        // 인덱스로 조회 : 문자열[인덱스]
+        document.write(text2[3]);
+        // 배열은 인덱스를 통해 값을 조회하고 해당 인덱스에 새로운 값을 대입 가능
+        const arr = ["java", "javascript", "python"];
+        console.log(arr);
+        arr[0] = "kotlin";
+        console.log(arr); 
+        // 문자열은 안됨. 읽기전용
+        const textTest = "playdata";
+        textTest[2] = "it";
+        console.log(textTest);
+    </script>
+
+    <h2>문자열 추출 및 대체</h2>
+    <script>
+        const text3 = "I like coffee";
+        // substring() 메소드 : substring(시작 인덱스, 마지막 인덱스 + 1)
+        document.write(text3.substring(7, text3.length) + "<br>");
+        // replace() 메소드 : replace(바꾸려는 글자, 바꿀 글자)
+        document.write(text3.replace("coffee", "latte"));
+    </script>
+
+    <h2>문자열 분할</h2>
+    <p>console 참조</p>
+    <script>
+        // split(문자 구분 기준) : 기준에 따라서 문자열을 쪼개 배열로 만듦
+        const text4 = "머리, 어깨, 무릎, 발, 무릎, 발";
+        console.log("[split()]")
+        console.log(text4.split(""));
+        console.log(text4.split(",")); // ""(한자씩 쪼갬), \t(탭), " "(스페이스=기본), "\n"(개행문자=엔터)
+    </script>
+
+    <h2>문자열 결합</h2>
+    <script>
+        // concat(추가 문자열1, 2, ...) : 문자열을 결합 (+와 유사)
+        const text5 = "흔들리는 꽃들 속에서 네 샴푸향이 느껴진거야";
+        document.write("".concat(text5[5], text5.substring(14, 17)));      
+        
+    </script>
+</body>
+</html>

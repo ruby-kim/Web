@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <style>
+        input {
+            width: 160px;
+        }
+        form div {
+            margin: 10px;
+            float: left;
+            height: 80px;
+        }
+        div button {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form 태그를 통한 데이터 검증 및 활용</h1>
+    <h2>BMI 계산기</h2>
+    <form name="bmi" onsubmit="return false;">
+        <img style="width: 160px;" src="https://image.flaticon.com/icons/svg/1754/1754237.svg" alt="체중계"><br>
+        <div>
+            <!--
+                name으로 이후 input 태그를 지정하기 쉽게
+                placeholder로 유저가 무슨 데이터를 입력해야하는지
+                required로 필요 여부 나타냄
+                min-max는 숫자의 경우 최대, 최소값 (length의 경우 최소, 최대 길이)
+            -->
+            <input type="text" name="name" placeholder="이름을 입력해주세요" minlength="2" maxlength="4" required><br>
+            <input type="number" name="height" placeholder="키를 입력해주세요" min="100" max="200" required><br>
+            <input type="number" name="weight" placeholder="몸무게를 입력해주세요" min="50" max="200" required>
+        </div>
+        <div>
+            <button onclick="calBMI()">결과 보기</button><br>
+        </div>
+    </form>
+    <script>
+        const bmi = ;
+        // document.forms를 통해서 form들의 묶음을 지정할 수 있음 => name attribute값으로 property로 호출 가능
+        const name = bmi.;
+        const height = bmi.;
+        const weight = bmi.;
+
+        function calBMI() {
+            // input 값을 검증 ("" 빈 문자열이 하나 이상 있을 때)
+            if() return
+            // return 은 함수를 더 이상 진행하지 않게 함
+            // input 요소에 value를 통해 입력된 값 호출
+            const msg =  + "님의 BMI는 " + (weight.? / (height.? / 100) ** 2).toFixed(2) + "입니다"
+            alert(msg)
+        }
+    </script>
+</body>
+</html>

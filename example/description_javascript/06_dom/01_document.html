@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <style>
+        .red {
+            color: red;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Document 객체</h1>
+    
+    <h2>HTML 요소 선택 및 수정</h2>
+    <!-- el이라는 id를 가진 요소 -->
+    <p id="el">before</p>
+    <script>
+        // document.getElementId(아이디) : 특정 아이디를 지닌 요소를 찾아준다 (아이디는 중복되지 않는 값이라 하나만 걸림)
+        const element = ;
+        // 위의 el id를 가진 p 태그의 element가 지정됨
+        document.write();
+        // 단순히 불러오면 값만 가져온다
+        .innerHTML = ;
+        // innerHTML 속성값을 건들면 태그 내부의 값이 수정된다
+    </script>
+
+    <h2>HTML 속성 및 스타일 수정</h2>
+    <p id="el2" class="bold">HTML 요소의 속성과 스타일을 수정할 수 있습니다</p>
+    <script>
+        const element2 = ;
+        .id = ; // id 프로퍼티
+        .style.fontSize = ;
+        // 스타일을 통해 폰트 크기 수정
+        .classList.add(); // 클래스 추가
+        .classList.remove(); // 클래스 삭제
+    </script>
+
+    <h2>HTML 요소 추가</h2>
+    <div id="parent"></div>
+    <script>
+        const par = ;
+        const newEl = ;
+        .appendChild();
+    </script>
+
+    <h2>자식 노드 접근</h2>
+    <div id="parent2">
+        <p>자식1</p>
+        <p>자식2</p>
+        <p>자식3</p>
+    </div>
+    <div id="parent3"><p>자식1</p><p>자식2</p><p>자식3</p></div>
+    <hr>
+    <script>
+        const par2 = ;
+        const child = ;
+        for() {
+            document.write();
+        }
+        const par3 = ;
+        const child2 = ;
+        for() {
+            document.write();
+        }
+        // 태그 사이에 있는 엔터를 텍스트 노드로 인식함
+    </script>
+</body>
+</html>

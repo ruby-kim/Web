@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Number</h1>
+    
+    <h2>NaN</h2>
+    <script>
+        console.log('[NaN]');
+        // NaN : Not A Number
+        // 숫자로 계산할 수 없는 값들 (0/0 혹은 문자열과 숫자 간의 계산 등 <- 덧셈 제외)
+        console.log(0/0);
+        console.log("글자"+1);
+        console.log("글자"-1);
+        console.log("글자"*1);
+        console.log("글자"/1);
+        
+    </script>
+    
+    <h2>toString()</h2>
+    <script>
+        console.log('[toString()]');
+        // Number.toString() 숫자를 문자로 만듦
+        let numStr = 123456;
+        console.log(numStr);
+        console.log(typeof(numStr));
+        console.log(numStr.toString());
+        console.log(typeof(numStr.toString()));
+    </script>
+
+    <h2>Number()</h2>
+    <script>
+        console.log('[Number()]');
+        // Number() 문자를 숫자로 만듦
+        let numStr1 = "123456";
+        let numStr2 = "숫자아님";
+        console.log(Number(numStr1));
+        console.log(Number(numStr2)); // 숫자가 아닐 경우 NaN로 변환됨
+    </script>
+    
+    <h2>parseInt()</h2>
+    <script>
+        console.log('[parseInt()]');
+        // parseInt() 숫자를 소수점 아래를 떼고 정수(Interger)로 만듦
+        let pInt1 = 123.456;
+        let pInt2 = -123.456;
+        console.log(parseInt(pInt1));
+        console.log(parseInt(print2));
+    </script>
+    
+    <h2>toFixed()</h2>
+    <script>
+        console.log('[toFixed()]');
+        // Number.toFixed() 숫자를 지정한 소수점 자리까지만 남기고 버림
+        let fix = 978.678432;
+        console.log(fix.toString(2))
+    </script>    
+</body>
+</html>

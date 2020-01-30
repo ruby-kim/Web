@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <style>
+        div {
+            width: 480px;
+            height: 80px;
+            margin: 10px;
+        }
+        #box {
+            border: 1px solid gray;
+            background-image: url("https://cdn.pixabay.com/photo/2017/02/13/21/57/lake-2063957_1280.jpg");
+            background-size: cover;
+        }
+        #shape {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Button 태그를 통한 HTML 조작</h1>
+    <div id="box">
+        <img id="shape"></img>
+    </div>
+    <div>
+        <!-- onclick 안에 실행문 또는 함수를 넣어서 실행 가능 -->
+        <!-- 모양 속성 버튼 -->
+        <button onclick="changeImage(shape, 'none')">숨기기</button>
+        <button onclick="changeImage(shape, DUCK)">오리</button>
+        <button onclick="changeImage(shape, SWAN)">백조</button><br>
+        <!-- 위치 속성 버튼 -->
+        <button onclick="changeFloat(shape, 'left')">왼쪽</button>
+        <button onclick="changeFloat(shape, 'center')">가운데</button>
+        <button onclick="changeFloat(shape, 'right')">오른쪽</button><br>
+    </div>
+    <script>
+        function changeImage(el, option) { // 조작하고자 하는 요소와 옵션을 받는 함수
+            if(option != "none") { // none option이 아니면
+                 // display를 inline(눈에 보임 & 자신의 크기만큼 영역을 차지)
+                 // option으로 받은 값으로 이미지 태그의 src(참조 주소)를 수정
+            } else {
+                 // none option이면 display를 none(영역과 보이는 요소 모두 숨김)으로 처리
+            }
+        }
+        /* 직접 해보기! */
+        function changeFloat(el, direction) {
+            if(direction == "center") { // 중앙 정렬일 경우
+                 // float를 풀고
+                 // margin으로 가운데 정렬
+            } else {
+                 // float 값을 바꿔줌
+            }
+        }
+        // 자주 쓰이는 것들은 모두 별도 이름을 줘서 상수로 관리
+        const shape = document.getElementById('shape');
+        const DUCK = 'https://image.flaticon.com/icons/svg/1012/1012600.svg';
+        const SWAN = 'https://image.flaticon.com/icons/svg/375/375074.svg';
+        // 페이지 로딩시 아래 항목 자동 실행
+        changeImage(shape, DUCK); // 오리 그림으로 기본 세팅
+        changeFloat(shape, "center"); // 가운데 정렬으로 기본 세팅
+    </script>
+</body>
+</html>

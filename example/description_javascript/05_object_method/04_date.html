@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Date</h1>
+    <h2>날짜 객체 생성</h2>
+    <script>
+        // 매개변수 없이 생성하면 현재 날짜 및 시각 참조하여 생성
+        document.write(new Date() + "<br>");
+        // 연, 월, 일 순으로 값을 입력해서 생성
+        // 다만 JavaScript에서 객체 생성시 월은 0부터 11까지 있다는 것을 유의
+        document.write(new Date(2020, 12, 31) + "<br>");
+        document.write(new Date(2020, 11, 31) + "<br>");
+        // over-loading. over-riding
+        // 연, 월, 일, 시, 분, 초 순으로 값을 입력해서 생성
+        document.write(new Date(2020, 0, 1, 10, 10, 10) + "<br>");
+        // 형식에 맞는 문자열을 입력하는 방법도 있음
+        document.write(new Date("2020-12-31") + "<br>"); // UTC 기준
+        document.write(new Date("2020/12/31") + "<br>");
+        document.write(new Date("2020.12.31") + "<br>");
+        document.write(new DAte("20-12-31")) // 이상한 포맷일 경우 Invalid Date
+    </script>
+    <h2>날짜 값 불러오기</h2>
+    <script>
+        let date = new Date();
+        document.write("연 " + date.getFullYear() + "<br>"); // 연
+        document.write("월 " + (date.getMonth() + 1) + "<br>"); // 월 (0~11)이므로 1 더해 줌
+        document.write("일 " + date.getDate() + "<br>") // 일
+        document.write("요일 " + date.getDay() + "<br>") // 요일 (0-일요일~6-토요일)
+        document.write("시 " + date.getHours() + "<br>") // 시
+        document.write("분 " + date.getMinutes() + "<br>") // 분
+        document.write("초 " + date.getSeconds() + "<br>") // 초
+    </script>
+</body>
+</html>

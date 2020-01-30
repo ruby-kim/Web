@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>객체</h1>
+    <h2>객체의 선언과 프로퍼티</h2>
+    <script>
+        console.log('[객체의 선언과 프로퍼티]');
+        const cat = {
+            name: "나비",
+            age: 1,
+            weight: 1
+        }; //object literal
+        const json = {
+            "data1": "hello";
+        }; //json
+        // ※ 왜 객체는 let이 아니라 const로 선언하나요?
+        // 객체의 경우 객체 자체가 아니라 객체 내부의 값을 수정하는 경우가 많음
+        // 그리하여 변수 자체를 새로 초기화하지 않기에 메모리 아끼는 겸하여 const로 선언 
+        console.log(cat);
+        console.log(cat.name);
+        console.log(cat['name']);
+        // 기존에 존재하지 않았던 프로퍼티명을 호출하고 값을 넣어 프로퍼티 추가 가능
+        cat.color = gold;
+        console.log(cat.color);
+        cat['color'] = 'red';
+        console.log(cat.color);
+
+        cat['race'] = 'mix';
+        console.log(cat.race);
+
+    </script>
+    <h2>메소드</h2>
+    <script>
+        // 객체 안에 소속된 함수를 메소드라 함
+        console.log('[메소드]')
+        const dog = {
+            name: '백구',
+            age: 2,
+            'weight': 4,
+            bark: function() {
+                console.log("bowwow!!");
+            },
+            bark2: function(x){
+                console.log(x);
+            },
+            bark3: function(x, y){
+                return x+y;
+            }
+        };
+        dog.bark(); // 객체명.메소드명()으로 호출함
+        dog.bark2("맛있는 걸 보면 짖는 개 멍멍");
+        console.log(dog.bark3(3, 2));
+        let k = dog.bark3(5, 10);
+        console.log(k);
+    </script>
+    <h2>this</h2>
+    <script>
+        console.log('[this]')
+        // 객체 스스로를 대상으로 지정하는 키워드 this
+        const person = {
+            firstName: "kyeongnam",
+            lastName: "kim",
+            
+            fullname: function() {
+                return this.lastName + this.firstName;
+            } 
+        };
+        console.log(person.fullname());
+        console.log(person.firstName + person.lastName);
+    </script>
+</body>
+</html>
