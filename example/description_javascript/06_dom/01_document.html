@@ -22,31 +22,31 @@
     <p id="el">before</p>
     <script>
         // document.getElementId(아이디) : 특정 아이디를 지닌 요소를 찾아준다 (아이디는 중복되지 않는 값이라 하나만 걸림)
-        const element = ;
+        const element = document.getElementbyId('el');
         // 위의 el id를 가진 p 태그의 element가 지정됨
-        document.write();
+        document.write(element.innerHTML + "<br>");
         // 단순히 불러오면 값만 가져온다
-        .innerHTML = ;
+        .innerHTML = "<h6>after</h6>";
         // innerHTML 속성값을 건들면 태그 내부의 값이 수정된다
     </script>
 
     <h2>HTML 속성 및 스타일 수정</h2>
     <p id="el2" class="bold">HTML 요소의 속성과 스타일을 수정할 수 있습니다</p>
     <script>
-        const element2 = ;
-        .id = ; // id 프로퍼티
-        .style.fontSize = ;
+        const element2 = document.getElementbyId('el2');
+        element2.id = el3; // id 프로퍼티
+        element2.style.fontSize = "40px";
         // 스타일을 통해 폰트 크기 수정
-        .classList.add(); // 클래스 추가
-        .classList.remove(); // 클래스 삭제
+        element2.classList.add("red"); // 클래스 추가
+        element2.classList.remove("bold"); // 클래스 삭제
     </script>
 
     <h2>HTML 요소 추가</h2>
     <div id="parent"></div>
     <script>
-        const par = ;
-        const newEl = ;
-        .appendChild();
+        const par = document.getElementbyId('parent');
+        const newEl = document.createElement("hr");
+        par.appendChild(newEl);
     </script>
 
     <h2>자식 노드 접근</h2>
@@ -58,16 +58,32 @@
     <div id="parent3"><p>자식1</p><p>자식2</p><p>자식3</p></div>
     <hr>
     <script>
-        const par2 = ;
-        const child = ;
-        for() {
-            document.write();
+        const par2 = document.getElementbyId("parent2");
+        const child = par2.childNodes;
+        for(let v of child) {
+            document.write(v.innerHTML);
+            document.write("<br>")
         }
-        const par3 = ;
-        const child2 = ;
-        for() {
-            document.write();
+        document.write("<br");
+
+        //일부러 붙여서 구현
+        const par3 = document.getElementbyId("parent3");
+        const child2 = par3.childNodes;
+        for(let v of child2) {
+            document.write(v.innerHTML);
+            document.write("<br>");
         }
+        document.write("<br>");
+        //해결책
+        const par3 = document.getElementbyId("parent3");
+        const child2 = par3.childNodes;
+        for(let v of child) {
+            if(!v.innerHTML) continue;
+            document.write(v.innerHTML);
+            document.write("<br>");
+        }
+        document.write("<br>");
+
         // 태그 사이에 있는 엔터를 텍스트 노드로 인식함
     </script>
 </body>

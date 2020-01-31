@@ -40,18 +40,22 @@
         </div>
     </form>
     <script>
-        const bmi = ;
+        const bmi = document.forms.bmi;
         // document.forms를 통해서 form들의 묶음을 지정할 수 있음 => name attribute값으로 property로 호출 가능
-        const name = bmi.;
-        const height = bmi.;
-        const weight = bmi.;
+        // 처음부터 value를 호출하면 빈 값으로 들어감
+        const name = bmi.name;
+        const height = bmi.height;
+        const weight = bmi.weight;
 
         function calBMI() {
             // input 값을 검증 ("" 빈 문자열이 하나 이상 있을 때)
-            if() return
+            if(name.value=="" || height.value=="" || weight.value==""){
+                alert("입력되지 않은 값이 있습니다");
+                return;
+            }
             // return 은 함수를 더 이상 진행하지 않게 함
             // input 요소에 value를 통해 입력된 값 호출
-            const msg =  + "님의 BMI는 " + (weight.? / (height.? / 100) ** 2).toFixed(2) + "입니다"
+            const msg =  name.value + "님의 BMI는 " + (weight.value / (height.value / 100) ** 2).toFixed(2) + "입니다";
             alert(msg)
         }
     </script>
