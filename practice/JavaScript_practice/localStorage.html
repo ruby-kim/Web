@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <style>
+        .box {
+            width: 640px;
+            border: 1px solid grey;
+            overflow: hidden;
+        }
+        .box > div {
+            float: left;
+            width: 45%;
+            margin: 2.5%;
+        }
+        #memobox > div {
+            width: 80%;
+            background-color: lightyellow;
+            border: 1px solid grey;
+            margin: 0px auto 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>localStorage로 메모장 만들기</h1>
+    <div class="box">
+        <div id="memobox"></div>
+        <div>
+            <textarea id="writer" cols="30" rows="10"></textarea><br>
+            <button onclick="save()">저장</button>
+            <button onclick="reset()">초기화</button>
+        </div>
+    </div>
+
+    <script>
+        // localStorage에 form(textarea) 안에 있는 값을 저장해주는 함수 save()
+        function save() {
+            const writer = document.getElementById("writer");
+            const prevMemo = localStorage.getItem("memo"); // getItem(키값)으로 값을 가져옴
+            if(prevMemo != null) {
+                localStorage.setItem("memo", prevMemo.concat("\t", writer.value.replace("\t", " ")))
+                // 해당 로컬스토리지 안에 값이 있다면 새로운 값을 concat 해준다. (\t를 기준으로)
+            } else {
+                localStorage.setItem("memo", "".concat(writer.value.replace("\t", " ")))
+                // 해당 로컬스토리지 안에 값이 없다면 빈 문자열을 하나 선언해주고 새로운 값을 concat 해준다. (\t를 기준으로)
+            }
+            writer.value = "";
+            drawMemo();
+        }
+        // localStorage에 form(textarea) 안에 있는 값을 그려주는 함수 drawMemo()
+        function drawMemo() {
+            const memobox = document.getElementById("memobox");
+            memobox.innerHTML = "";
+            // memobox를 id로 가진 요소의 내부값을 초기화
+            localStorage.getItem("memo").split("\t")
+            // 배열.reverse는 배열의 순서를 역순으로 만들어주는 메소드
+                .reverse().forEach(function(v) { // forEach 문으로 내부의 함수를 실행
+                    const box = document.createElement("div") // div 태그를 만들어줌
+                    box.innerHTML = v; // 그 내용을 \t(탭) 문자로 구분해서 만든 배열의 요소들로 채운다
+                    if(v != "") {
+                        memobox.appendChild(box)
+                        // div 안에 localStorage 안의 값을 자식 노드로 집어넣음
+                    }
+                })
+        }
+        // localStorage 초기화를 위한 함수 reset()
+        function reset() {
+            localStorage.removeItem("memo"); // 해당 키를 삭제
+            drawMemo();
+        }
+        // 홈페이지 로딩 시에 메모 그리면서 시작
+        drawMemo();
+    </script>
+</body>
+</html>
