@@ -1,7 +1,16 @@
 # Web
-HTML, CSS, JavaScript
+### 1. basic
+basic knowledge about HTML, CSS, JavaScript
+### 2. Todo_Angular
+to-do list using Angular
+### 3. Todo_Go
+to-do list using Go lang
+### 4. Todo_Spring
+to-do list using Spring
+### 5. Todo_Vue
+to-do list using Vue
 
-## 그 외 참고사이트
+## Reperence Site
 |Repo|Explanation|
 |:--:|:--:|
 |[typescript-kr/typescript-kr.github.io](https://github.com/typescript-kr/typescript-kr.github.io)|TypeScript Handbook in Korean|
