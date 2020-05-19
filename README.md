@@ -13,7 +13,8 @@ to-do list using Vue
 ## Reperence Site
 |Repo|Explanation|
 |:--:|:--:|
-|[typescript-kr/typescript-kr.github.io](https://github.com/typescript-kr/typescript-kr.github.io)|TypeScript Handbook in Korean|
+|[GoesToEleven/golang-web-dev](https://github.com/GoesToEleven/golang-web-dev)|golang web dev list|
 |[gothinkster/realworld](https://github.com/gothinkster/realworld)|"The mother of all demo apps"<br>— Exemplary fullstack Medium.com clone<br>powered by React, Angular, Node, Django, and many more|
 |[mhyeon-lee/spring-data-sample-codes](https://github.com/mhyeon-lee/spring-data-sample-codes)|spring data sample codes|
-|[GoesToEleven/golang-web-dev](https://github.com/GoesToEleven/golang-web-dev)|golang web dev list|
+|[reactkr/learn-react-in-korean](https://github.com/reactkr/learn-react-in-korean)|한국어로된 리액트 관련 포스팅이나 웹사이트의 모음|
+|[typescript-kr/typescript-kr.github.io](https://github.com/typescript-kr/typescript-kr.github.io)|TypeScript Handbook in Korean|
